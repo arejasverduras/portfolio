@@ -1,7 +1,9 @@
+body {
+  background: linear-gradient(0.75turn,rgb(0,217,255),rgb(201, 247, 255));
+}
+
 .App {
   text-align: center;
-  background: linear-gradient(0.75turn,rgb(0,217,255),rgb(201, 247, 255));
-  min-height: 600px;
 }
 
 
@@ -31,8 +33,8 @@ nav li {
   background-color: black;
   padding: 8px;
   margin: 0px 4px;
-  border-right: 2px solid lightblue;
-  border-bottom: 2px solid lightblue;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 nav a {
@@ -57,3 +59,30 @@ nav a {
     transform: translateY(0px);
   }
 } 
+
+/* Main */
+
+/* Home */
+.heroSection {
+  border: 1px dashed gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.heroButtons {
+  border: 1px dashed gold;
+}
+
+.heroButtons button {
+  color: white;
+  border-radius: 5px;
+  list-style-type: none;
+  background-color: black;
+  padding: 8px 16px;
+  margin: 0px 4px;
+  border: none;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
