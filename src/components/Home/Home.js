@@ -1,9 +1,12 @@
 import React from 'react';
+import { Hero } from '../Hero/Hero';
+import { HeroButtons } from '../HeroButtons/HeroButtons';
 
 export const Home = (props) => {
     return (
         <>
-            <h1>Hallo!</h1>
+            <Hero />
+            <HeroButtons />
         </>
     )
 }

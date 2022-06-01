@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background: linear-gradient(0.75turn,rgb(0,217,255),rgb(201, 247, 255));
+  min-height: 600px;
 }
 
 
