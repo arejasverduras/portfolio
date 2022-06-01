@@ -4,6 +4,8 @@ body {
 
 .App {
   text-align: center;
+  max-width: 1024px;
+  margin: 0px auto;
 }
 
 
@@ -88,8 +90,25 @@ nav a {
   border-bottom: 2px solid white;
 }
 
-.optionalTextSection {
+.optionalTextSection, .optionalLogoSection {
   background-color: white;
   padding: 20px;
   opacity: 0.9;
+  box-shadow: gray 8px 10px;
+}
+
+.optionalLogoSection {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.logoList {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  padding-inline-start: 0;
+}
+
+.logoList li {
+
 }
