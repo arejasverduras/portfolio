@@ -15,7 +15,7 @@ export const ProjectList = (props) => {
         },
         {
         title: "title 3",
-        description: "description 3",
+        description: "hallo 3",
         img: ""
     }]
 

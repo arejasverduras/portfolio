@@ -45,7 +45,7 @@ nav a {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  h1 {
+  .heroImage {
     animation: item-float infinite 3s ease-in-out;
   }
 }
@@ -129,7 +129,7 @@ nav a {
 }
 
 .projectTile {
-  border: 2px dashed gold;
+  border: 2px dashed purple;
   background-color: gold;
   height: 300px;
   width: 400px;
