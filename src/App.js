@@ -7,7 +7,7 @@ import {
 import './App.css';
 import { Home} from './components/Home/Home';
 import { About } from './components/About/About';
-import { Portfolio} from './components/Portfolio/Portfolio';
+import { Projects} from './components/Projects/Projects';
 import { Contact } from './components/Contact/Contact.js';
 
 function App() {
@@ -22,8 +22,8 @@ function App() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio" activeClassName="active">
-              Portfolio
+            <NavLink to="/projects" activeClassName="active">
+              Projects
             </NavLink>
           </li>
           <li>
@@ -42,7 +42,7 @@ function App() {
     <main>
       <Routes>
         <Route exact path="/" element={<Home/>}/>
-        <Route exact path="/portfolio" element={<Portfolio/>}/>
+        <Route exact path="/projects" element={<Projects/>}/>
         <Route exact path="/about" element={<About/>}/>
         <Route exact path="/contact" element={<Contact/>}/>
       </Routes>
