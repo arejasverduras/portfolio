@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProjectsSlider } from './ProjectsSlider/ProjectsSlider';
+import { ProjectsSlider } from './ProjectSlider/ProjectSlider';
 
 export const Projects = (props) => {
     return (
