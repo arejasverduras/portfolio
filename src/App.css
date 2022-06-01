@@ -115,7 +115,23 @@ nav a {
 
 /* Projects */
 
-.projectsSlider {
+.projectSlider {
   border: 2px dashed gold;
   height: 400px;
+}
+
+.projectList {
+  border: 2px dashed gold;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projectTile {
+  border: 2px dashed gold;
+  background-color: gold;
+  height: 300px;
+  width: 400px;
+  margin: 10px;
 }

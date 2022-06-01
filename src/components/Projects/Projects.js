@@ -1,5 +1,6 @@
 import React from 'react';
 import { ProjectsSlider } from './ProjectSlider/ProjectSlider';
+import { ProjectList } from './ProjectList/ProjectList';
 
 export const Projects = (props) => {
     return (
@@ -8,7 +9,7 @@ export const Projects = (props) => {
             <ProjectsSlider />
             {/* scroll down button (optional) */}
             {/* <ProjectsFilter />  / <ProjectSearch /> */}
-            {/* <ProjectList /> ==> Renders ProjectTiles */}
+            <ProjectList />
         </>
     )
 }

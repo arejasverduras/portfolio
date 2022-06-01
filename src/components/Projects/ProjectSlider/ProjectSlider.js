@@ -6,7 +6,7 @@ export const ProjectsSlider = (props)=>{
     
     
     return (
-        <div className="projectsSlider">
+        <div className="projectSlider">
             {/* generate a 'Slide' component for eacht object in the array */}
             <p>(slider here)</p>
         </div>
