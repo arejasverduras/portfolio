@@ -73,6 +73,7 @@ nav a {
 
 .heroButtons {
   border: 1px dashed gold;
+  padding: 20px 0;
 }
 
 .heroButtons button {
@@ -85,4 +86,10 @@ nav a {
   border: none;
   border-right: 2px solid white;
   border-bottom: 2px solid white;
+}
+
+.optionalTextSection {
+  background-color: white;
+  padding: 20px;
+  opacity: 0.9;
 }
