@@ -112,3 +112,10 @@ nav a {
 .logoList li {
   /* styles for logo list items */
 }
+
+/* Projects */
+
+.projectsSlider {
+  border: 2px dashed gold;
+  height: 400px;
+}
