@@ -7,12 +7,20 @@ export const ContactInfo = (props) => {
         github: <a href="https://github.com/arejasverduras">gitHub</a>,
         linkedin: <a href="https://linkedin.com/michielroukens">linkedIn</a>
     }
+
+    const contactEntries = Object.entries(contactInfoList);
     
     return (           
         <div className='contactInfo'>
             <h1>Contact</h1>
-            <p>Artist by heart, traveller by day, coder at night. 
-                Play music with the tunes of the universe.</p>
+            <table className="contactTable">
+            {contactEntries.map(([key, value]) => 
+                <tr>
+                    <td style={{"width": "30%"}}colSpan="1" className="contactKey">{key}</td>
+                    <td className="contactValue">{value}</td>
+                </tr>              
+            )}
+            </table>
         </div>
     )
 }
