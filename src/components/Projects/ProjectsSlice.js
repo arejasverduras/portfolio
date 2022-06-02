@@ -3,8 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const projectsSlice = createSlice({
     name: "projects",
     initialState: {
-            projects: {
-                1 : {
+            projects: [
+                {
                     id: 1,
                     name: "Resume",
                     description: "Interactive Resume to apply for Front-end / React jobpositions. Fully searchable, printable and 'flippable'.",
@@ -15,7 +15,7 @@ const projectsSlice = createSlice({
                     demoLink: "https://arejasresume.surge.sh",
                     sourceLink: "https://github.com/arejasverduras/resume"
                 },
-                2 : {
+                {
                     id: 2,
                     name: "Resume2",
                     description: "Interactive Resume to apply for Front-end / React jobpositions. Fully searchable, printable and 'flippable'.",
@@ -26,7 +26,7 @@ const projectsSlice = createSlice({
                     demoLink: "https://arejasresume.surge.sh",
                     sourceLink: "https://github.com/arejasverduras/resume"
                 },
-                3 : {
+                {
                     id: 3,
                     name: "Resume3",
                     description: "Interactive Resume to apply for Front-end / React jobpositions. Fully searchable, printable and 'flippable'.",
@@ -37,7 +37,7 @@ const projectsSlice = createSlice({
                     demoLink: "https://arejasresume.surge.sh",
                     sourceLink: "https://github.com/arejasverduras/resume"
                 }
-            }
+            ]
         },
         reducers: {
             addProject: (state, action) => {

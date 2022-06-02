@@ -1,7 +1,7 @@
 import React from "react";
 import { ProjectTile } from "../ProjectTile/ProjectTile";
 
-export const ProjectList = (props) => {
+export const ProjectList = ({projects}) => {
     // state gets updated by search, with 'available' projects.
     const projectsArray = [{
             title: "title 1",
@@ -23,9 +23,9 @@ export const ProjectList = (props) => {
         <div className="projectList">
             {/* generate a ProjectTile
              for each item from the project state (list of objects) */}
-             {projectsArray.map(project => 
+             {projectsArray.map((project, index) => 
                 <ProjectTile 
-                    project={project}
+                    project={project} key={index}
                 />
                 )}
         </div>
