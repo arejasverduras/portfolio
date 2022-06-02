@@ -1,14 +1,15 @@
 import React from 'react';
-import { Hero } from '../Hero/Hero';
+import MichielHero from '../Hero/MichielHero.png';
 
 export const About = (props) => {
     return (
         <>
+            <h1 style={{"display":"none"}}>About</h1>
             <section className="aboutTopSection">
-                <Hero />
+                 <img className="heroImage" src={MichielHero}></img>
                 <div className='aboutPageSummary'>
-                    <h1>About</h1>
-                    <p>An athlete by heart, a traveller by day, a poet at night. 
+                    <h2>Michiel Roukens</h2>
+                    <p>Artist by heart, traveller by day, coder at night. 
                         Play music with the tunes of the universe.</p>
                 </div>
             </section>
