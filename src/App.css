@@ -2,6 +2,11 @@ body {
   background: linear-gradient(0.75turn,rgb(0,217,255),rgb(201, 247, 255));
 }
 
+p {
+  letter-spacing: 0.2pt;
+  line-height: 1.7em;
+}
+
 .App {
   text-align: center;
   max-width: 1024px;
@@ -95,6 +100,7 @@ nav a {
   padding: 20px;
   opacity: 0.9;
   box-shadow: gray 8px 10px;
+  margin-bottom: 30px;
 }
 
 .optionalLogoSection {
@@ -148,6 +154,8 @@ nav a {
 .aboutPageSummary {
  /* previously defined with .optionalTextSection */
   max-width: 20%;
+  padding: 20px 60px;
+  background-color: gold;
 }
 
 @media screen and (max-width: 500px) {
@@ -155,3 +163,24 @@ nav a {
     max-width: 90%;
   }
 }
+
+.aboutTextSection {
+  background-color: gold;
+  padding: 20px;
+  opacity: 0.9;
+  box-shadow: gray 8px 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+.aboutExtraText {
+  padding: 0 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutTextSection {
+    margin-right: 40%;
+  }
+}
+
