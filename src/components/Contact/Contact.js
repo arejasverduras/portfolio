@@ -7,8 +7,8 @@ export const Contact = (props) => {
     
     return (
             <section className="contactTopSection">
-                 <img className="heroImage" src={MichielHero}></img>
-                 <ContactInfo />
+                 {/* <img className="contactImage" src='./images/arantxa.png' alt="Michiel's dog Arantxa"></img> */}
+                 <ContactInfo className="contactInfoComponent" />
             </section>
             
     )

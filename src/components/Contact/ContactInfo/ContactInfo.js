@@ -10,17 +10,20 @@ export const ContactInfo = (props) => {
 
     const contactEntries = Object.entries(contactInfoList);
     
-    return (           
-        <div className='contactInfo'>
-            <h1>Contact</h1>
-            <table className="contactTable">
-            {contactEntries.map(([key, value]) => 
-                <tr>
-                    <td style={{"width": "30%"}}colSpan="1" className="contactKey">{key}</td>
-                    <td className="contactValue">{value}</td>
-                </tr>              
-            )}
-            </table>
-        </div>
+    return (   
+        <>        
+            <img className="contactImage" src='./images/arantxa.png' alt="Michiel's dog Arantxa"></img>
+            <div className='contactInfo'>
+                <h1>Contact</h1>
+                <table className="contactTable">
+                {contactEntries.map(([key, value]) => 
+                    <tr>
+                        <td style={{"width": "30%"}}colSpan="1" className="contactKey">{key}</td>
+                        <td className="contactValue">{value}</td>
+                    </tr>              
+                )}
+                </table>
+            </div>
+        </>
     )
 }

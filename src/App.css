@@ -9,7 +9,7 @@ p {
 
 .App {
   text-align: center;
-  max-width: 1024px;
+  max-width: 1440px;
   margin: 0px auto;
 }
 
@@ -137,9 +137,14 @@ nav a {
 .projectTile {
   border: 2px dashed purple;
   background-color: gold;
-  height: 300px;
+  height: 500px;
   width: 400px;
   margin: 10px;
+}
+
+.projectTileImage {
+  max-width: 100%;
+  max-height: 30%;
 }
 
 /* About */
@@ -180,10 +185,30 @@ nav a {
 
 @media screen and (min-width: 768px) {
   .aboutTextSection {
-    margin-right: 40%;
+    margin-right: 45%;
   }
+}
+
+/* Contact */
+
+.contactTopSection {
+  margin-top: 5%;
+}
+
+.contactImage {
+  z-index: 1;
+}
+
+/* ContactInfo */
+
+.contactInfo {
+  z-index: 0;
+  margin-top: -30px;
+  opacity: 1;
+  background-color: rgb(255, 217, 0);
 }
 
 .contactTable{
   margin: 0 auto;
+  z-index: 0;
 }
