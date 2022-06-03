@@ -212,3 +212,11 @@ nav a {
   margin: 0 auto;
   z-index: 0;
 }
+
+.contactKey {
+  text-align: left;
+}
+
+.contactValue {
+  text-align: right;
+}
