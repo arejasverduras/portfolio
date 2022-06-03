@@ -7,7 +7,8 @@ const contactSlice = createSlice({
             mail: "info@arejo.nl",
             phone: '+31622040319',
             github: <a href="https://github.com/arejasverduras">gitHub</a>,
-            linkedin: <a href="https://linkedin.com/michielroukens">linkedIn</a>
+            linkedin: <a href="https://linkedin.com/michielroukens">linkedIn</a>,
+            insta: "@michielroukens"
     }},
     reducers: {
         addContactInfo: (state, action) => {

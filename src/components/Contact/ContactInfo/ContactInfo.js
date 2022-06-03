@@ -1,14 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import { selectContact } from "../ContactSlice";
 
 export const ContactInfo = (props) => {
-    const contactInfoList = {
-        mail: "info@arejo.nl",
-        phone: '+31622040319',
-        github: <a href="https://github.com/arejasverduras">gitHub</a>,
-        linkedin: <a href="https://linkedin.com/michielroukens">linkedIn</a>
-    }
+    const contactInfoListStore = useSelector(selectContact);
 
-    const contactEntries = Object.entries(contactInfoList);
+    const contactEntries = Object.entries(contactInfoListStore);
     
     return (   
         <>        
@@ -16,12 +13,14 @@ export const ContactInfo = (props) => {
             <div className='contactInfo'>
                 <h1>Contact</h1>
                 <table className="contactTable">
-                {contactEntries.map(([key, value]) => 
-                    <tr>
-                        <td style={{"width": "30%"}}colSpan="1" className="contactKey">{key}</td>
-                        <td className="contactValue">{value}</td>
-                    </tr>              
-                )}
+                    <tbody>
+                    {contactEntries.map(([key, value]) => 
+                        <tr key={key}>
+                            <td style={{"width": "30%"}}colSpan="1" className="contactKey">{key}</td>
+                            <td className="contactValue">{value}</td>
+                        </tr>              
+                    )}
+                    </tbody>
                 </table>
             </div>
         </>
