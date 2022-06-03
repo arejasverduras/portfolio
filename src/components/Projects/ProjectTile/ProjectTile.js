@@ -16,6 +16,12 @@ export const ProjectTile = ({project}) =>{
         sourceLink: "https://github.com/arejasverduras/resume"
     },
     */
+
+    const techClassNamer = (tech) => tech === 'JavaScript' ? 'techLabel techJS': 'techLabel'; 
+
+    
+
+
     return ( 
         <div className="projectTile">
             <h3>{name}</h3>
@@ -23,7 +29,7 @@ export const ProjectTile = ({project}) =>{
             <p>{description}</p>
             <ul className="projectTileTech">
                 {tech.map((tech, index) => (
-                    <li key={index}>{tech}</li>
+                    <li key={index} className={techClassNamer(tech)}>{tech}</li>
                 ))}
             </ul>
             <p className="cat">{cat}</p>
