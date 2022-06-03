@@ -21,7 +21,7 @@ export const ProjectTile = ({project}) =>{
             <h3>{name}</h3>
             <img className="projectTileImage" src={tileImage} alt={name}></img>
             <p>{description}</p>
-            <ul className="tech">
+            <ul className="projectTileTech">
                 {tech.map((tech, index) => (
                     <li key={index}>{tech}</li>
                 ))}

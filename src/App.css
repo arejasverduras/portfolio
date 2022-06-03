@@ -147,6 +147,13 @@ nav a {
   max-height: 30%;
 }
 
+.projectTileTech {
+  display: flex;
+  list-style-type: armenian;
+  justify-content: space-around;
+  padding-inline-start: 0;
+}
+
 /* About */
 
 .aboutTopSection {
