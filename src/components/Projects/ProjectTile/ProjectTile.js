@@ -17,7 +17,9 @@ export const ProjectTile = ({project}) =>{
     },
     */
 
-    const techClassNamer = (tech) => tech === 'JavaScript' ? 'techLabel techJS': 'techLabel'; 
+    const techClassNamer = (tech) => tech ===  'JavaScript' ? 'techLabel techJS': 'techLabel'; 
+
+    const techClassNamer2 = (tech) => tech ===  'JavaScript' ? 'techLabel techJS': 'techLabel'; 
 
     
 
