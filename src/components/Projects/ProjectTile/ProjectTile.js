@@ -19,7 +19,22 @@ export const ProjectTile = ({project}) =>{
 
     const techClassNamer = (tech) => tech ===  'JavaScript' ? 'techLabel techJS': 'techLabel'; 
 
-    const techClassNamer2 = (tech) => tech ===  'JavaScript' ? 'techLabel techJS': 'techLabel'; 
+    const techClassNamer2 = (tech) => {
+        switch (tech) {
+            case 'JavaScript':
+                return 'techLabel techJS';
+            case 'React':
+                return 'techLabel techReact';
+            case 'Redux': 
+                return 'techLabel techRedux';
+            case 'HTML':
+                return 'techLabel techHTML'
+            case 'CSS':
+                return 'techLabel techCSS'
+            default: 
+            return 'techLabel'
+        }
+    }
 
     
 
@@ -31,7 +46,7 @@ export const ProjectTile = ({project}) =>{
             <p>{description}</p>
             <ul className="projectTileTech">
                 {tech.map((tech, index) => (
-                    <li key={index} className={techClassNamer(tech)}>{tech}</li>
+                    <li key={index} className={techClassNamer2(tech)}>{tech}</li>
                 ))}
             </ul>
             <p className="cat">{cat}</p>
