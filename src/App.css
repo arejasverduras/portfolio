@@ -163,8 +163,26 @@ nav a {
 }
 
 .techJS {
-  background-color: red;
-  color: white;
+  background-color: rgb(255, 217, 0);
+  color: black;
+  border: 1px solid black;
+  box-shadow: black 2px 3px;
+}
+
+.techReact {
+  background-color: rgb(114, 224, 255)
+}
+
+.techRedux {
+  background-color: blueviolet;
+}
+
+.techHTML {
+  background-color: rgb(204, 43, 7);
+}
+
+.techCSS {
+  background-color: rgb(3, 76, 201);
 }
 
 /* About */
