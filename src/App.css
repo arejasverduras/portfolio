@@ -33,10 +33,11 @@ nav ul {
   justify-items: center;
   padding-inline-start: 0;
   padding: 0 8px;
+  list-style-type: none;
 }
 
-nav li {
-  list-style-type: none;
+
+.NavLink {
   background-color: black;
   padding: 8px;
   margin: 0px 4px;

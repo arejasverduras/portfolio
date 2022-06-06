@@ -11,28 +11,51 @@ import { Projects} from './components/Projects/Projects';
 import { Contact } from './components/Contact/Contact.js';
 
 function App() {
+  let activeStyle = {
+    color: "gold",
+    backgroundColor: "black",
+    borderRight: "2px solid gold",
+    borderBottom: "2px solid gold"
+  };
+
+  let activeClassName = "underline";
+  
   return (
     <div className="App">
       <header className="App-header">
       <nav>
         <ul>
         <li>
-            <NavLink to="/" activeClassName="active">
+            <NavLink to="/" 
+              style={({ isActive }) =>
+               isActive ? activeStyle: undefined
+               }
+               className="NavLink"
+               >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/projects" activeClassName="active">
+            <NavLink to="/projects" style={({ isActive }) =>
+               isActive ? activeStyle: undefined
+               }
+               className="NavLink">
               Projects
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/about"} activeClassName="active">
+            <NavLink to={"/about"} style={({ isActive }) =>
+               isActive ? activeStyle: undefined
+               }
+               className="NavLink">
               About
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/contact"} activeClassName="active">
+            <NavLink to={"/contact"} style={({ isActive }) =>
+               isActive ? activeStyle: undefined
+               }
+               className="NavLink">
               Contact
             </NavLink>
           </li>
