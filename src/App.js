@@ -14,8 +14,8 @@ function App() {
   let activeStyle = {
     color: "gold",
     backgroundColor: "black",
-    borderRight: "2px solid gold",
-    borderBottom: "2px solid gold"
+    borderRight: "4px solid gold",
+    borderBottom: "4px solid gold"
   };
 
   let activeClassName = "underline";

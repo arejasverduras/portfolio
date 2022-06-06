@@ -41,8 +41,12 @@ nav ul {
   background-color: black;
   padding: 8px;
   margin: 0px 4px;
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
+  transition: all 0.1s;
+}
+
+.NavLink:hover {
+  border-right: 4px solid gold;
+  left: -4px;
 }
 
 nav a {
