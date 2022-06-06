@@ -16,28 +16,24 @@ export const ProjectTile = ({project}) =>{
         sourceLink: "https://github.com/arejasverduras/resume"
     },
     */
+    const techLabels = (tech) => `techLabel ${techClassNamer(tech)}`;
 
-    const techClassNamer = (tech) => tech ===  'JavaScript' ? 'techLabel techJS': 'techLabel'; 
-
-    const techClassNamer2 = (tech) => {
+    const techClassNamer = (tech) => {
         switch (tech) {
             case 'JavaScript':
-                return 'techLabel techJS';
+                return 'techJS';
             case 'React':
-                return 'techLabel techReact';
+                return 'techReact';
             case 'Redux': 
-                return 'techLabel techRedux';
+                return 'techRedux';
             case 'HTML':
-                return 'techLabel techHTML'
+                return 'techHTML'
             case 'CSS':
-                return 'techLabel techCSS'
+                return 'techCSS'
             default: 
-            return 'techLabel'
+            return '';
         }
     }
-
-    
-
 
     return ( 
         <div className="projectTile">
@@ -46,7 +42,7 @@ export const ProjectTile = ({project}) =>{
             <p>{description}</p>
             <ul className="projectTileTech">
                 {tech.map((tech, index) => (
-                    <li key={index} className={techClassNamer2(tech)}>{tech}</li>
+                    <li key={index} className={techLabels(tech)}>{tech}</li>
                 ))}
             </ul>
             <p className="cat">{cat}</p>

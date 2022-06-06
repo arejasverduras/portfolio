@@ -10,7 +10,7 @@ const projectsSlice = createSlice({
                     description: "Interactive Resume to apply for Front-end / React jobpositions. Fully searchable, printable and 'flippable'.",
                     tileImage: "./images/arantxa.png",
                     images: [],
-                    tech: ['React','JavaScript', 'HTML', 'CSS'],
+                    tech: ['React','JavaScript', 'HTML', 'CSS','whatever'],
                     cat: 'Front-end',
                     type: 'Personal',
                     demoLink: "https://arejasresume.surge.sh",
