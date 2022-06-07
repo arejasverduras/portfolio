@@ -36,16 +36,19 @@ export const ProjectTile = ({project}) =>{
     }
 
     return ( 
-        <div className="projectTile">
-            <h3>{name}</h3>
+        <article className="projectTile">
+            
             <img className="projectTileImage" src={tileImage} alt={name}></img>
-            <p>{description}</p>
-            <ul className="projectTileTech">
-                {tech.map((tech, index) => (
-                    <li key={index} className={techLabels(tech)}>{tech}</li>
-                ))}
-            </ul>
-            <p className="cat">{cat}</p>
-        </div>
+            <div className="projectTileContent">
+                <h3 className="projectTileTitle">{name}</h3>
+                <p className="projectTileDescription">{description}</p>
+                <ul className="projectTileTech">
+                    {tech.map((tech, index) => (
+                        <li key={index} className={techLabels(tech)}>{tech}</li>
+                    ))}
+                </ul>
+                <p className="cat">{cat}</p>
+            </div>
+        </article>
     )
 }
