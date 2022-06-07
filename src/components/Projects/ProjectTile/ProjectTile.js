@@ -41,14 +41,14 @@ export const ProjectTile = ({project}) =>{
             <img className="projectTileImage" src={tileImage} alt={name}></img>
             <div className="projectTileContent">
                 <h3 className="projectTileTitle">{name}</h3>
+                <p className="cat">{cat}</p>
                 <p className="projectTileDescription">{description}</p>
-                <ul className="projectTileTech">
+            </div>
+            <ul className="projectTileTech">
                     {tech.map((tech, index) => (
                         <li key={index} className={techLabels(tech)}>{tech}</li>
                     ))}
                 </ul>
-                <p className="cat">{cat}</p>
-            </div>
         </article>
     )
 }
