@@ -173,6 +173,27 @@ height: 30%;
 /* empty */
 }
 
+.catLabel {
+  font-style: italic;
+}
+
+.catFrontend::before {
+  content: '> ';
+
+}
+
+.catBackend::after {
+  content: ' <';
+}
+
+.catFullstack::before {
+  content: '< '
+}
+
+.catFullstack::after {
+  content: ' >'
+}
+
 .projectTileTech {
   display: flex;
   list-style-type: none;

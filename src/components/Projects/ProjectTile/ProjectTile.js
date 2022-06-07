@@ -35,13 +35,30 @@ export const ProjectTile = ({project}) =>{
         }
     }
 
+    const catLabels = (cat) => `catLabel ${catClassNamer(cat)}`;
+
+    const catClassNamer = (cat) => {
+        switch (cat) {
+            case 'Front-End':
+                return 'catFrontend'
+            case 'Back-End':
+                return 'catBackend'
+            case 'Full-Stack':
+                return 'catFullstack'
+            case 'wordpress':
+                return 'catWordpress'
+            default: 
+            return '';
+        }
+    }
+
     return ( 
         <article className="projectTile">
             
             <img className="projectTileImage" src={tileImage} alt={name}></img>
             <div className="projectTileContent">
                 <h3 className="projectTileTitle">{name}</h3>
-                <p className="cat">{cat}</p>
+                <p className={catLabels(cat)}>{cat}</p>
                 <p className="projectTileDescription">{description}</p>
             </div>
             <ul className="projectTileTech">

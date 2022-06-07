@@ -11,7 +11,7 @@ const projectsSlice = createSlice({
                     tileImage: "./images/projectImages/resumeTile.png",
                     images: [],
                     tech: ['React','JavaScript', 'HTML', 'CSS','whatever'],
-                    cat: 'Front-end',
+                    cat: 'Front-End',
                     type: 'Personal',
                     demoLink: "https://arejasresume.surge.sh",
                     sourceLink: "https://github.com/arejasverduras/resume"
@@ -23,7 +23,7 @@ const projectsSlice = createSlice({
                     tileImage: "./images/projectImages/portfolioTile.png",
                     images: [],
                     tech: ['Redux', 'React', 'JavaScript' ,'HTML','CSS'],
-                    cat: 'Front-end',
+                    cat: 'Back-End',
                     type: 'Personal',
                     demoLink: "https://arejasresume.surge.sh",
                     sourceLink: "https://github.com/arejasverduras/resume"
@@ -35,7 +35,7 @@ const projectsSlice = createSlice({
                     tileImage: "./images/projectImages/koekboekTile.png",
                     images: [],
                     tech: ['JavaScript', 'HTML', 'CSS'],
-                    cat: 'Front-end',
+                    cat: 'Full-Stack',
                     type: 'Personal',
                     demoLink: "https://arejasresume.surge.sh",
                     sourceLink: "https://github.com/arejasverduras/resume"
