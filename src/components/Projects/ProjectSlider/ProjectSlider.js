@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import ProjectSliderBtn from './ProjectSliderBtn';
-import { catLabels, catClassNamer } from '../projectsFeatures';
+import { catLabels, techLabels } from '../projectsFeatures';
 
 export const ProjectsSlider = ({projects})=>{
     //load an array with objects for the slider
@@ -37,7 +37,13 @@ export const ProjectsSlider = ({projects})=>{
                         />
                         <div className='slideDescription'>
                             <h2>{project.name} || {project.client}</h2>
-
+                            <p className={catLabels(project.cat)}>{project.cat}</p>
+                <p className="projectTileDescription">{project.description}</p>
+                            <ul className="projectTileTech">
+                                {project.tech.map((tech, index) => (
+                                    <li key={index} className={techLabels(tech)}>{tech}</li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 )
