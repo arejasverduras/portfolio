@@ -7,6 +7,7 @@ const projectsSlice = createSlice({
                 {
                     id: 1,
                     name: "Resume",
+                    client: "Personal",
                     description: "Interactive Resume to apply for Front-end / React jobpositions. Fully searchable, printable and 'flippable'.",
                     tileImage: "./images/projectImages/resumeTile.png",
                     images: [],
@@ -19,6 +20,7 @@ const projectsSlice = createSlice({
                 {
                     id: 2,
                     name: "Portfolio",
+                    client: "Personal",
                     description: "Interactive Portfolio to showcase professional and personal projects. Searchable and full with easter eggs'.",
                     tileImage: "./images/projectImages/portfolioTile.png",
                     images: [],
@@ -31,6 +33,7 @@ const projectsSlice = createSlice({
                 {
                     id: 3,
                     name: "Koekboek",
+                    client: "Personal",
                     description: "Interactive JavaScript Project.",
                     tileImage: "./images/projectImages/koekboekTile.png",
                     images: [],

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import ProjectSliderBtn from './ProjectSliderBtn';
+import { catLabels, catClassNamer } from '../projectsFeatures';
 
 export const ProjectsSlider = ({projects})=>{
     //load an array with objects for the slider
@@ -25,7 +26,7 @@ export const ProjectsSlider = ({projects})=>{
     return (
         <div className="projectSlider">
             {/* generate a 'Slide' component for eacht object in the array */}
-            {projects.map((obj, index) => {
+            {projects.map((project, index) => {
                 return (
                     <div 
                     key={index}
@@ -34,6 +35,10 @@ export const ProjectsSlider = ({projects})=>{
                         src={process.env.PUBLIC_URL + `/images/projectImages/sliderImages/image${index + 1}.png`} 
                         alt="slider"
                         />
+                        <div className='slideDescription'>
+                            <h2>{project.name} || {project.client}</h2>
+
+                        </div>
                     </div>
                 )
             })}
