@@ -12,13 +12,13 @@ import { Contact } from './components/Contact/Contact.js';
 
 function App() {
   let activeStyle = {
-    color: "gold",
+    color: "rgb(94, 231, 255)",
     backgroundColor: "black",
-    borderRight: "4px solid gold",
-    borderBottom: "4px solid gold"
+    borderRight: "4px solid rgb(94, 231, 255)",
+    borderBottom: "4px solid rgb(94, 231, 255)"
   };
 
-  let activeClassName = "underline";
+  let activeClassName = "NavLinkActive";
   
   return (
     <div className="App">

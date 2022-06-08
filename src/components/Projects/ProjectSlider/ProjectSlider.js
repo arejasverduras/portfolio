@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
+//import BtnSlider from './BtnSlider
 
-export const ProjectsSlider = (props)=>{
+export const ProjectsSlider = ({projects})=>{
     //load an array with objects for the slider
 
     
@@ -8,7 +9,16 @@ export const ProjectsSlider = (props)=>{
     return (
         <div className="projectSlider">
             {/* generate a 'Slide' component for eacht object in the array */}
-            <p>(slider here)</p>
+            {projects.map((obj, index) => {
+                return (
+                    <div>
+                        <img
+                        src={process.env.PUBLIC_URL + `/images/projectImages/sliderImages/image${index + 1}.png`} 
+                        alt="slider"
+                        />
+                    </div>
+                )
+            })}
         </div>
     )
 }

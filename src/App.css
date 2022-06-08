@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(0.75turn,rgb(0,217,255),rgb(201, 247, 255));
+  background: linear-gradient(0.85turn,gold, white);
 }
 
 p {
@@ -48,14 +48,15 @@ nav ul {
 }
 
 .NavLink:hover {
-  border-right: 4px solid gold;
+  border-right: 4px solid rgb(94, 231, 255);
   left: -4px;
 }
 
-.NavLink:active {
+/* .NavLink:active {
   border-right: none;
-  left: 0px;
-}
+
+} */
+
 
 nav a {
   color: white;
@@ -135,12 +136,12 @@ nav a {
 /* Projects */
 
 .projectSlider {
-  border: 2px dashed gold;
+  /* border: 2px dashed gold; */
   height: 400px;
 }
 
 .projectList {
-  border: 2px dashed gold;
+  /* border: 2px dashed gold; */
   min-height: 200px;
   display: flex;
   justify-content: center;
@@ -192,6 +193,10 @@ height: 30%;
 
 .catFullstack::after {
   content: ' >'
+}
+
+.projectTileDescription {
+  /* empty styles */
 }
 
 .projectTileTech {
