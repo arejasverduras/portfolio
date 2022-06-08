@@ -15,7 +15,7 @@ export const Projects = (props) => {
     
     return (
         <>
-            <h1>Projects</h1>
+            <h1 className='Projects'>Projects</h1>
             <ProjectsSlider projects={filteredProjects} />
             {/* scroll down button (optional) */}
             {/* <ProjectsFilter />  / <ProjectSearch /> */}
