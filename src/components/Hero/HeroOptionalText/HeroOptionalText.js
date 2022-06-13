@@ -1,6 +1,11 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { selectClients } from '../ClientSlice';
 
 export const HeroOptionalText = (props) =>{
+    const clients = useSelector(selectClients);
+    
+    
     return (
         <>
         <section className='optionalTextSection' id="heroOptionalText">
@@ -10,9 +15,12 @@ export const HeroOptionalText = (props) =>{
         <section className='optionalLogoSection' id="heroOptionalText">
                 <h2>as trusted by</h2>
                 <ul className='logoList'>
-                    <li>logo1</li>
-                    <li>logo1</li>
-                    <li>logo1</li>
+                    {clients.map((client, index) => 
+                    <li key={index}>
+                       <h3>{client.name}</h3>
+                        <img src={client.logo}></img>
+                        </li>
+                    )}
                 </ul>
         </section>
         </>
