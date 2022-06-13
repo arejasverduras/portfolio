@@ -7,7 +7,7 @@ export const Home = (props) => {
     return (
         <>
             <Hero />
-            <HeroButtons />
+            {/* <HeroButtons /> */}
             <HeroOptionalText />
         </>
     )

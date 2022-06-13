@@ -17,8 +17,8 @@ export const HeroOptionalText = (props) =>{
                 <ul className='logoList'>
                     {clients.map((client, index) => 
                     <li key={index}>
-                       <h3>{client.name}</h3>
                         <img src={client.logo}></img>
+                        <h3>{client.name}</h3>
                         </li>
                     )}
                 </ul>
