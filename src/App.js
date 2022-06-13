@@ -8,6 +8,7 @@ import './App.css';
 import { Home} from './components/Home/Home';
 import { About } from './components/About/About';
 import { Projects} from './components/Projects/Projects';
+import { Project } from './components/Project/Project';
 import { Contact } from './components/Contact/Contact.js';
 
 function App() {
@@ -66,10 +67,18 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home/>}/>
         <Route exact path="/projects" element={<Projects/>}/>
-        <Route exact path="/about" element={<About/>}/>
+              {/* <Route path=":projectId" element={<Project/>}/> */}     
+        <Route path="/projects/:projectId" element={<Project/>}/>
+        <Route path="/about" element={<About/>}/>
         <Route exact path="/contact" element={<Contact/>}/>
+        <Route 
+          path="*"
+          element={
+            <main style={{padding: "1rem"}}>
+            <p>There's nothing here!</p>
+            </main>
+        }/>
       </Routes>
-
     </main>
     </div>
   );
