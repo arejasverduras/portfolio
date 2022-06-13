@@ -22,6 +22,10 @@ export const ProjectsSlider = ({projects})=>{
             setSlideIndex(projects.length)
         }
     }
+
+    const moveDot = index => {
+        setSlideIndex(index);
+    }
     
     return (
         <div className="projectSlider">
@@ -50,6 +54,15 @@ export const ProjectsSlider = ({projects})=>{
             })}
             <ProjectSliderBtn moveSlide={prevSlide} direction={"prev"}/>
             <ProjectSliderBtn moveSlide={nextSlide} direction={"next"} />
+
+            <div className='container-dots'>
+                {Array.from({length: projects.length}).map((item, index) => (
+                    <div 
+                    onClick={()=> moveDot(index+1)}
+                    className={slideIndex === index+1 ? "dot active": "dot"}>
+                    </div>
+                ))}
+            </div>
 
         </div>
     )
