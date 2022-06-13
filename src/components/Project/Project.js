@@ -22,7 +22,7 @@ export const Project = () =>{
     return (
         <>
         <h1>{project.name}</h1>
-        <img src={process.env.PUBLIC_URL + project.tileImage}></img>
+        <img src={process.env.PUBLIC_URL + project.tileImage} alt="screenshot of project"></img>
        <h2>{params.projectId}</h2>
         
         </>
