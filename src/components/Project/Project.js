@@ -4,18 +4,25 @@ import { useSelector } from 'react-redux';
 import { selectProjects } from '../Projects/ProjectsSlice';
 
 export const Project = () =>{
-    let params = useParams();
-    let projectId = params.projectId;
+    const params = useParams();
+    let id = Number(params.projectId);
+    console.log(`id = ${id}`);
 
 
-    const projects = useSelector(selectProjects);
-
-    let currentProject = projects.filter(project => project.id === projectId);
-    console.log(currentProject);
+    const allProjects = useSelector(selectProjects);
+    // const projct = projects.find((pr) =>  pr.id === projectId);
+    const filteredProject = allProjects.filter(pr => 
+        pr.id === id
+    );
+    console.log(filteredProject);
+    const project = filteredProject[0];
+    console.log(project);
+    
 
     return (
         <>
-        <p>{currentProject}</p>
+        <h1>{project.name}</h1>
+        <img src={process.env.PUBLIC_URL + project.tileImage}></img>
        <h2>{params.projectId}</h2>
         
         </>

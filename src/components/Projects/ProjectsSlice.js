@@ -4,7 +4,7 @@ const projectsSlice = createSlice({
     name: "projects",
     initialState: {
             projects: [
-                {
+                 {
                     id: 1,
                     name: "Resume",
                     client: "Personal",
