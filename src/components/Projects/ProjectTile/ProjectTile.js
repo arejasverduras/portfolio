@@ -18,10 +18,11 @@ export const ProjectTile = ({project}) =>{
     return ( 
 
             <article className="projectTile">
-                <Link to={`/projects/${id}`}>Link</Link>
-                <img className="projectTileImage" src={tileImage} alt={name}></img>
+                <Link to={`/projects/${id}`}>
+                    <img className="projectTileImage" src={tileImage} alt={name}></img>
+                </Link>
                 <div className="projectTileContent">
-                    <h3 className="projectTileTitle">{name}</h3>
+                    <h3 className="projectTileTitle"><Link to={`/projects/${id}`}>{name}</Link></h3>
                     <p className={catLabels(cat)}>{cat}</p>
                     <p className="projectTileDescription">{description}</p>
                 </div>
