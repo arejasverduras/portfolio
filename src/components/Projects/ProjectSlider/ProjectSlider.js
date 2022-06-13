@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import ProjectSliderBtn from './ProjectSliderBtn';
 import { catLabels, techLabels } from '../projectsFeatures';
+import { Link } from 'react-router-dom';
 
 export const ProjectsSlider = ({projects})=>{
     //load an array with objects for the slider
@@ -35,12 +36,13 @@ export const ProjectsSlider = ({projects})=>{
                     <div 
                     key={index}
                     className={slideIndex === index + 1? "projectSlide active-anim": "projectSlide"}>
+                        
                         <img
                         src={process.env.PUBLIC_URL + `/images/projectImages/sliderImages/image${index + 1}.png`} 
                         alt="slider"
                         />
-                        <div className='slideDescription'>
-                            <h2>{project.name} || {project.client}</h2>
+                       <div className='slideDescription'>
+                            <h2><Link to={`/projects/${project.id}`}>{project.name} || {project.client}</Link></h2>
                             <p className={catLabels(project.cat)}>{project.cat}</p>
                 <p className="projectTileDescription">{project.description}</p>
                             <ul className="projectTileTech">
