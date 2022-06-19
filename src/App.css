@@ -199,6 +199,7 @@ opacity: 1;
   .projectSlide img {
     width: 100%;
     object-position: 0;
+    object-fit: cover;
   }
 
   .slideDescription {
@@ -383,6 +384,10 @@ height: 30%;
   border: 1px solid black;
   z-index: 0;
   text-align: center;
+  border-top-right-radius: 7% 99%;
+  border-bottom-left-radius: 28% 12%;
+  border-bottom-right-radius: 12.5% 25%;
+  border-top-left-radius: 12% 18%;
 }
 
 .imageSlider {
@@ -395,6 +400,10 @@ border: 1px solid black;
 border-radius: 15px;
 box-shadow: rgba(0, 0, 0, 0.837) 10px 10px;
 text-align: left;
+border-top-left-radius: 7% 99%;
+border-top-right-radius: 28% 12%;
+border-bottom-left-radius: 12.5% 25%;
+border-bottom-right-radius: 12% 18%;
 }
 
 .projectImage {
@@ -415,6 +424,10 @@ text-align: left;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.837) 5px 5px;
   border: 1px solid black;
+  border-top-right-radius: 7% 99%;
+border-bottom-left-radius: 28% 12%;
+border-bottom-right-radius: 12.5% 25%;
+border-top-left-radius: 12% 18%;
 }
 
 .projectContent .projectTileTech {
@@ -454,12 +467,12 @@ text-align: left;
 
 .projectButton {
   border: 2px solid black;
-  padding: 8px;
+  padding: 8px 20px;
   box-shadow:rgba(0, 0, 0, 0.837) 1px 1px;
   top: 0;
   left: 0;
-  border-top-left-radius: 50% 99%;
-  border-top-right-radius: 88% 12%;
+  border-top-right-radius: 50% 99%;
+  border-top-left-radius: 88% 12%;
   border-bottom-left-radius: 12.5% 25%;
   border-bottom-right-radius: 12% 88%;
   transition: all 500ms;
@@ -467,34 +480,25 @@ text-align: left;
 
 .projectButton:hover {
   position: relative;
-  top: -10px;
-  left: -10px;
-  box-shadow:rgba(0, 0, 0, 0.837) 10px 10px;
+  top: -6px;
+  left: -6px;
+  box-shadow:rgba(0, 0, 0, 0.837) 6px 6px;
 }
 
 .projectButton:active {
   top: 10px;
   left:10px;
-  box-shadow: rgba(0, 0, 0, 0.837) -10px -10px;
+  box-shadow: rgba(0, 0, 0, 0.837) -3px -3px;
   border-right: 10px solid rgba(0, 0, 0, 0.837);
   border-bottom: 10px solid rgba(0, 0, 0, 0.837);
 }
 
-.prevButton::before {
-  content: '< ';
-  font-size: 72px;
-}
 
 .prevButton {
-  border-top-right-radius: 50% 99%;
-  border-top-left-radius: 88% 12%;
+  border-top-left-radius: 50% 99%;
+  border-top-right-radius: 88% 12%;
   border-bottom-left-radius: 12.5% 25%;
   border-bottom-right-radius: 12% 88%;
-}
-
-.nextButton::after {
-  content: ' >';
-  font-size: 72px;
 }
 
 /* About */
@@ -570,3 +574,4 @@ text-align: left;
 .contactValue {
   text-align: right;
 }
+
