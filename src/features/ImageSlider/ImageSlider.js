@@ -27,7 +27,7 @@ export const ImageSlider = ({images})=>{
     }
     
     return (
-        <div className="projectSlider">
+        <div className="imageSlider">
             {/* generate a 'Slide' component for eacht object in the array */}
             {images.map((image, index) => {
                 return (

@@ -385,6 +385,18 @@ height: 30%;
   text-align: center;
 }
 
+.imageSlider {
+max-width: 800px;
+height: 400px;
+margin: 0 auto;
+position: relative;
+overflow: hidden;
+border: 1px solid black;
+border-radius: 15px;
+box-shadow: rgba(0, 0, 0, 0.837) 10px 10px;
+text-align: left;
+}
+
 .projectImage {
   border: 7px double black;
   border-radius: 5px;
@@ -426,7 +438,7 @@ height: 30%;
   justify-content: space-between;
 }
 
-@media screen and (min-width: 1083px) {
+@media screen and (min-width: 1194px) {
   .projectButtons {
     display: flex;
     position: absolute;

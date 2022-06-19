@@ -23,8 +23,8 @@ export const Project = () =>{
 
 
 
-    const {name, client, description, tileImage, images, tech, cat, type, demoLink, sourceLink } = project;
-
+    const {name, client, description, images, tech, cat, type, demoLink, sourceLink } = project;
+        
     useEffect(()=>{
         setCurrentProject(id);
     },[id])
