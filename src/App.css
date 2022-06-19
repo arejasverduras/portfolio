@@ -377,12 +377,13 @@ height: 30%;
 
 .projectTitle {
   background-color: white;
-  max-width: 300px;
+  max-width: 50%;
   margin: 0 auto;
   margin-bottom: -1px;
   padding: 10px;
   border: 1px solid black;
   z-index: 0;
+  text-align: center;
 }
 
 .projectImage {
