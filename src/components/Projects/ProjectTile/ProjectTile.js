@@ -1,19 +1,11 @@
 import React from "react";
 import { catLabels, techLabels } from '../projectsFeatures';
 import {
-    Routes,
-    Route,
-    NavLink,
     Link
   } from "react-router-dom";
-  import { Project } from "../../Project/Project";
 
 export const ProjectTile = ({project}) =>{
-    const {id, name, description, tileImage, images, tech, cat} = project;
-
-    // const clickTile = () => {
-    //     // Link to Project component with Route
-    // }
+    const {id, name, description, tileImage, tech, cat} = project;
 
     return ( 
 
