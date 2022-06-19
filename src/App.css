@@ -453,11 +453,15 @@ text-align: left;
 
 
 .projectButton {
-  border: 2px solid white;
+  border: 2px solid black;
   padding: 8px;
   box-shadow:rgba(0, 0, 0, 0.837) 1px 1px;
   top: 0;
   left: 0;
+  border-top-left-radius: 50% 99%;
+  border-top-right-radius: 88% 12%;
+  border-bottom-left-radius: 12.5% 25%;
+  border-bottom-right-radius: 12% 88%;
   transition: all 500ms;
 }
 
@@ -479,6 +483,13 @@ text-align: left;
 .prevButton::before {
   content: '< ';
   font-size: 72px;
+}
+
+.prevButton {
+  border-top-right-radius: 50% 99%;
+  border-top-left-radius: 88% 12%;
+  border-bottom-left-radius: 12.5% 25%;
+  border-bottom-right-radius: 12% 88%;
 }
 
 .nextButton::after {
