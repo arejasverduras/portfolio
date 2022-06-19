@@ -27,8 +27,8 @@ const projectsSlice = createSlice({
                     tech: ['Redux', 'React', 'JavaScript' ,'HTML','CSS', 'yolo'],
                     cat: 'Back-End',
                     type: 'Personal',
-                    demoLink: "https://arejasresume.surge.sh",
-                    sourceLink: "https://github.com/arejasverduras/resume"
+                    demoLink: "http://localhost:3000/",
+                    sourceLink: "https://github.com/arejasverduras/portfolio"
                 },
                 {
                     id: 3,
@@ -40,8 +40,8 @@ const projectsSlice = createSlice({
                     tech: ['JavaScript', 'HTML', 'CSS'],
                     cat: 'Full-Stack',
                     type: 'Personal',
-                    demoLink: "https://arejasresume.surge.sh",
-                    sourceLink: "https://github.com/arejasverduras/resume"
+                    demoLink: "https://arejasverduras.github.io/koekboek/",
+                    sourceLink: "https://github.com/arejasverduras/koekboek"
                 }
             ]
         },

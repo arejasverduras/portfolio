@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { selectProjects } from '../Projects/ProjectsSlice';
 import { Link } from 'react-router-dom';
+import { catLabels, techLabels } from '../Projects/projectsFeatures';
 
 export const Project = () =>{
     const params = useParams();
@@ -19,6 +20,10 @@ export const Project = () =>{
     // console.log(filteredProject);
     const project = filteredProject[0];
 
+
+
+    const {name, client, description, tileImage, images, tech, cat, type, demoLink, sourceLink } = project;
+
     useEffect(()=>{
         setCurrentProject(id);
     },[id])
@@ -26,9 +31,24 @@ export const Project = () =>{
     return (
         <>
         <article className='ProjectContainer'>
-            <h1>{project.name}</h1>
-            <img src={process.env.PUBLIC_URL + project.tileImage} alt="screenshot of project"></img>
-            <h2>{params.projectId}</h2>
+            <h1>{name} || {client}</h1>
+            <img src={process.env.PUBLIC_URL + tileImage} alt="screenshot of project"></img>
+            <div className="projectContent">
+                    <p className={catLabels(cat)}>{cat}</p>
+                    <ul className="projectTileTech">
+                         {tech.map((tech, index) => (
+                            <li key={index} className={techLabels(tech)}>{tech}</li>
+                        ))}
+                    </ul>
+                    <ul className="projectLinks">
+                        <li><a href={demoLink} target="blank">Live Demo</a></li>
+                        <li><a href={sourceLink} target="blank">View Source on GitHub</a></li>
+                    </ul>
+                    <p className="projectDescription">{description}</p>
+
+           
+            </div>
+
         </article>
         <Link to={`/projects/${
             currentProject !== 1 ? currentProject-1 : allProjects.length
