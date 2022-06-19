@@ -10,7 +10,7 @@ const projectsSlice = createSlice({
                     client: "Arejas",
                     description: "Interactive Resume to apply for Front-end / React jobpositions. Fully searchable, printable and 'flippable'.",
                     tileImage: "/images/projectImages/resumeTile.png",
-                    images: [],
+                    images: ["/images/projectImages/resumeTile.png","/images/projectImages/resumeTile.png","/images/projectImages/resumeTile.png"],
                     tech: ['React','JavaScript', 'HTML', 'CSS','whatever'],
                     cat: 'Front-End',
                     type: 'Personal',

@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { selectProjects } from '../Projects/ProjectsSlice';
 import { Link } from 'react-router-dom';
 import { catLabels, techLabels } from '../Projects/projectsFeatures';
+import { ImageSlider } from '../../features/ImageSlider/ImageSlider';
 
 export const Project = () =>{
     const params = useParams();
@@ -32,7 +33,8 @@ export const Project = () =>{
         <>
         <article className='projectContainer'>
             <h1 className="projectTitle">{name} || {client} || {type} </h1>
-            <img className="projectImage" src={process.env.PUBLIC_URL + tileImage} alt="screenshot of project"></img>
+            {/* <img className="projectImage" src={process.env.PUBLIC_URL + tileImage} alt="screenshot of project"></img> */}
+            <ImageSlider images={images}/>
             <div className="projectContent">
                     <p className={catLabels(cat)}>{cat}</p>
                     <ul className="projectTileTech">
