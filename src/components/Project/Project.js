@@ -50,14 +50,19 @@ export const Project = () =>{
             </div>
 
         </article>
-        <Link to={`/projects/${
-            currentProject !== 1 ? currentProject-1 : allProjects.length
-            }`}><button>Previous project</button>
-        </Link>
-        <Link to={`/projects/${
-            currentProject !== allProjects.length ? currentProject+1 : 1
-            }`}><button>Next project</button>
-        </Link>
+        <div className='projectButtons'>
+            <Link to={`/projects/${
+                currentProject !== 1 ? currentProject-1 : allProjects.length
+                }`}
+                className="projectButton prevButton">Previous project
+            </Link>
+            <Link to={`/projects/${
+                currentProject !== allProjects.length ? currentProject+1 : 1
+                }`}
+                className="projectButton nextButton"
+                >Next project
+            </Link>
+        </div>
         </>
     )
 }
