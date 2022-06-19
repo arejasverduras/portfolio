@@ -31,7 +31,7 @@ export const Project = () =>{
     return (
         <>
         <article className='projectContainer'>
-            <h1 className="projectTitle">{name} || {client}</h1>
+            <h1 className="projectTitle">{name} || {client} || {type} </h1>
             <img className="projectImage" src={process.env.PUBLIC_URL + tileImage} alt="screenshot of project"></img>
             <div className="projectContent">
                     <p className={catLabels(cat)}>{cat}</p>
