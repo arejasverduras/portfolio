@@ -1,5 +1,86 @@
 body {
-  background: linear-gradient(0.85turn,gold,white);
+  /* background: linear-gradient(0.85turn,gold,white); */
+  background: conic-gradient(
+    gold 0%,
+    white 15%,
+    lightblue 33%,
+    gold 46%
+  )
+  
+  /* background: conic-gradient(
+    lightblue 0%,
+    white 15%,
+    gold  33%,
+    lightblue 44%
+  ); */
+  /* background: repeating-conic-gradient(from 0deg, gold 0deg 30deg, white 33deg 60deg, lightblue 63deg 90deg); */
+}
+
+.noise {
+
+  padding: 200px;
+  margin-bottom: 100px;
+  color: black;
+  font-size: 24px;
+  letter-spacing: 1.2em;
+  /* background: linear-gradient(20deg,
+    blue,
+    transparent
+  ), url(http://localhost:3000/images/pattern.svg); */
+ background: conic-gradient(
+    gold 0%,
+    lightblue 18%,
+    transparent 25%,
+    blue 96%,
+    gold 98%
+  ), url(http://localhost:3000/images/pattern.svg);
+  filter: contrast(170%) brightness(500%)
+}
+
+/* Chrome-specific */
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+  .noise {
+    filter: contrast(290%) brightness(1000%);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .noise {
+    animation: grainSea 3s infinite alternate-reverse;
+  }
+}
+
+@keyframes grainSea {
+  0% {
+    
+    
+    filter: contrast(370%) brightness(500%)
+  }
+  50% {
+    
+    filter: contrast(100%) brightness(200%);
+  }
+
+  100% {
+   
+    filter: contrast(240%) brightness(1000%) opacity(0);
+  }
+} 
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background: moccasin; */
+  mix-blend-mode: multiply;
+}
+
+.isolate {
+  isolation: isolate;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 p {
@@ -391,12 +472,19 @@ height: 30%;
   }
 }
 
-.projectContainer {
-  padding: 20px;
-  animation: 1s easeIn;
+@keyframes rotateIn {
+  from {
+    transform: rotate(180deg)
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 
-
+.projectContainer {
+  padding: 20px;
+  animation: 1s rotateIn;
+}
 
 .projectTitle {
   background-color: white;
@@ -411,7 +499,6 @@ height: 30%;
   border-bottom-left-radius: 28% 12%;
   border-bottom-right-radius: 12.5% 25%;
   border-top-left-radius: 12% 18%;
-
 }
 
 .imageSlider {
@@ -424,17 +511,12 @@ border: 1px solid black;
 border-radius: 15px;
 box-shadow: rgba(0, 0, 0, 0.837) 10px 10px;
 text-align: left;
-/* border-top-left-radius: 7% 99%;
-border-top-right-radius: 28% 12%;
-border-bottom-left-radius: 12.5% 25%;
-border-bottom-right-radius: 12% 18%; */
 }
 
 .projectImage {
   border: 7px double black;
   border-radius: 5px;
   background-color: lightgray;
-  /* box-shadow: rgba(0, 0, 0, 0.837) 5px 5px; */
   margin: 0 auto;
   margin-bottom: -5px;
   z-index: 1;
@@ -449,10 +531,10 @@ border-bottom-right-radius: 12% 18%; */
   box-shadow: rgba(0, 0, 0, 0.837) 5px 5px;
   border: 1px solid black;
   border-top-right-radius: 7% 99%;
-border-bottom-left-radius: 28% 12%;
-border-bottom-right-radius: 12.5% 25%;
-border-top-left-radius: 12% 18%;
-overflow: hidden;
+  border-bottom-left-radius: 28% 12%;
+  border-bottom-right-radius: 12.5% 25%;
+  border-top-left-radius: 12% 18%;
+  overflow: hidden;
 }
 
 .projectContent .projectTileTech {
@@ -487,8 +569,6 @@ overflow: hidden;
     justify-content: space-between;
   }
 }
-
-
 
 .projectButton {
   border: 2px solid black;
@@ -525,7 +605,6 @@ overflow: hidden;
   border-bottom-left-radius: 12.5% 25%;
   border-bottom-right-radius: 12% 88%;
 }
-
 
 /* Animations */
 
@@ -565,21 +644,21 @@ overflow: hidden;
 
 @keyframes borderFloatSoft{
   from {
-    border-top-right-radius: 17% 99%;
+    border-top-right-radius: 7% 99%;
     border-bottom-left-radius: 28% 12%;
     border-bottom-right-radius: 12.5% 25%;
     border-top-left-radius: 12% 18%;
     box-shadow: rgba(0, 0, 0, 0.837) 10px 10px;
   }
   50% {
-    border-top-right-radius: 7% 29%;
+    border-top-right-radius: 7% 69%;
     border-bottom-left-radius: 18% 21%;
     border-top-left-radius: 30% 52%;
     border-bottom-right-radius: 21% 81%;
     box-shadow: rgba(0, 0, 0, 0.837) 0px 0px;
   }
   to {
-    border-top-right-radius: 7% 99%;
+    border-top-right-radius: 27% 89%;
     border-bottom-left-radius: 28% 12%;
     border-bottom-right-radius: 12.5% 25%;
     border-top-left-radius: 12% 18%;
@@ -673,4 +752,3 @@ overflow: hidden;
 .contactValue {
   text-align: right;
 }
-
