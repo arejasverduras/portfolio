@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(0.85turn,gold, white);
+  background: linear-gradient(0.85turn,gold,white);
 }
 
 p {
@@ -295,6 +295,16 @@ background: gold;
   margin: 10px;
   box-shadow: rgba(0, 0, 0, 0.837) 10px 10px;
   text-align: left;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  transition: 500ms all;
+}
+
+.projectTile:hover {
+  position: relative;
+  top: -10px;
+  left: -10px;
 }
 
 .projectTileImage {
@@ -306,6 +316,7 @@ background: gold;
 .projectTileContent {
 padding: 20px;
 height: 30%;
+
 }
 
 .catLabel {
@@ -371,9 +382,21 @@ height: 30%;
 
 /* Project */
 
+@keyframes easeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .projectContainer {
   padding: 20px;
+  animation: 1s easeIn;
 }
+
+
 
 .projectTitle {
   background-color: white;
@@ -388,6 +411,7 @@ height: 30%;
   border-bottom-left-radius: 28% 12%;
   border-bottom-right-radius: 12.5% 25%;
   border-top-left-radius: 12% 18%;
+
 }
 
 .imageSlider {
@@ -400,10 +424,10 @@ border: 1px solid black;
 border-radius: 15px;
 box-shadow: rgba(0, 0, 0, 0.837) 10px 10px;
 text-align: left;
-border-top-left-radius: 7% 99%;
+/* border-top-left-radius: 7% 99%;
 border-top-right-radius: 28% 12%;
 border-bottom-left-radius: 12.5% 25%;
-border-bottom-right-radius: 12% 18%;
+border-bottom-right-radius: 12% 18%; */
 }
 
 .projectImage {
@@ -428,6 +452,7 @@ border-bottom-right-radius: 12% 18%;
 border-bottom-left-radius: 28% 12%;
 border-bottom-right-radius: 12.5% 25%;
 border-top-left-radius: 12% 18%;
+overflow: hidden;
 }
 
 .projectContent .projectTileTech {
@@ -505,9 +530,12 @@ border-top-left-radius: 12% 18%;
 /* Animations */
 
 @media (prefers-reduced-motion: no-preference) {
-   .imageSlider
+   .imageSlider, .projectSlider
   {
     animation: borderFloat  10s infinite alternate;
+  }
+  .projectContent, .projectTile {
+    animation: borderFloatSoft 20s infinite alternate;
   }
 }
 
@@ -519,12 +547,56 @@ border-top-left-radius: 12% 18%;
     border-top-left-radius: 12% 18%;
     box-shadow: rgba(0, 0, 0, 0.837) 10px 10px;
   }
+  50% {
+    border-bottom-left-radius: 79% 9%;
+    border-top-right-radius: 82% 21%;
+    border-top-left-radius: 5.1% 52%;
+    border-bottom-right-radius: 21% 81%;
+    box-shadow: rgba(0, 0, 0, 0.837) 0px -0px;
+  }
   to {
     border-bottom-left-radius: 7% 99%;
     border-top-right-radius: 28% 12%;
     border-top-left-radius: 12.5% 25%;
     border-bottom-right-radius: 12% 18%;
     box-shadow: rgba(0, 0, 0, 0.837) -10px -10px;
+  }
+}
+
+@keyframes borderFloatSoft{
+  from {
+    border-top-right-radius: 17% 99%;
+    border-bottom-left-radius: 28% 12%;
+    border-bottom-right-radius: 12.5% 25%;
+    border-top-left-radius: 12% 18%;
+    box-shadow: rgba(0, 0, 0, 0.837) 10px 10px;
+  }
+  50% {
+    border-top-right-radius: 7% 29%;
+    border-bottom-left-radius: 18% 21%;
+    border-top-left-radius: 30% 52%;
+    border-bottom-right-radius: 21% 81%;
+    box-shadow: rgba(0, 0, 0, 0.837) 0px 0px;
+  }
+  to {
+    border-top-right-radius: 7% 99%;
+    border-bottom-left-radius: 28% 12%;
+    border-bottom-right-radius: 12.5% 25%;
+    border-top-left-radius: 12% 18%;
+    box-shadow: rgba(0, 0, 0, 0.837) 10px 10px;
+  }
+}
+
+@keyframes colorChange{
+  from {
+    background-color: black;
+    color: gold
+
+  }
+  to {
+    background-color: gold;
+    color: black;
+ 
   }
 }
 
