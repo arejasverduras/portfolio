@@ -20,7 +20,7 @@ body {
 
   padding: 200px;
   margin-bottom: 100px;
-  color: black;
+  color: transparent;
   font-size: 24px;
   letter-spacing: 1.2em;
   /* background: linear-gradient(20deg,
@@ -34,7 +34,7 @@ body {
     blue 96%,
     gold 98%
   ), url(http://localhost:3000/images/pattern.svg); */
-  background: linear-gradient(
+  background: radial-gradient(
     blue 0%,
     transparent 25%,
     blue 66%
@@ -47,7 +47,8 @@ body {
 
 .noise::before {
   content: 'hallo';
-  background: linear-gradient(
+  color: white;
+  background: radial-gradient(
     blue 30%,
     transparent 55%,
     blue 96%
@@ -60,12 +61,17 @@ body {
   position: absolute;
   left: 0px;
   top: 0px;
-
 }
 
-.noise:hover:before {
-  opacity: 0;
-}
+@keyframes grainSeaOpacity {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+} 
 
 /* Chrome-specific
 @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
@@ -74,11 +80,11 @@ body {
   }
 } */
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .noise {
-    animation: grainSeaOpacity 3s infinite alternate-reverse;
+@media (prefers-reduced-motion: no-preference) {
+  .noise::before {
+    animation: grainSeaOpacity 2s infinite alternate;
   }
-} */
+}
 
 @keyframes grainSea {
   0% {
@@ -126,24 +132,6 @@ body {
     filter: contrast(210%) brightness(900%);
   }
 } 
-
-@keyframes grainSeaOpacity {
-  0% {
-    
-    opacity: 1;
-
-
-  }
-
-  100% {
-    opacity: 0;
-
-  }
-} 
-
-
-
-
 
 .overlay {
   position: absolute;
