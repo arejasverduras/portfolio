@@ -17,65 +17,156 @@ body {
 }
 
 .noise {
-
+  width: 300px;
+  height: 300px;
   padding: 200px;
   margin-bottom: 100px;
   color: transparent;
   font-size: 24px;
   letter-spacing: 1.2em;
-  /* background: linear-gradient(20deg,
-    blue,
-    transparent
-  ), url(http://localhost:3000/images/pattern.svg); */
- /* background: conic-gradient(
-    gold 0%,
-    lightblue 18%,
-    transparent 25%,
-    blue 96%,
-    gold 98%
-  ), url(http://localhost:3000/images/pattern.svg); */
   background: conic-gradient(
     blue 0%,
     transparent 25%,
     blue 66%
-    /* gold 0%,
-    transparent 25%,
-    gold 66% */
-
   ), url(http://localhost:3000/images/pattern.svg);
   filter: contrast(170%) brightness(500%);
   position: relative;
-  z-index: 100;
+  opacity: 1;
+  z-index: 1;
 }
 
 .noise::before {
+  width: 300px;
+  height: 300px;
   content: 'hallo';
   color: white;
   background: conic-gradient(
     blue 30%,
-    transparent 55%,
+    transparent 65%,
     blue 96%
 
   ), url(http://localhost:3000/images/pattern.svg);
   filter: contrast(190%) brightness(700%);
-  opacity: 1;
-  transition: opacity 2s;
-  z-index: -100;
+  opacity: 0;
+  z-index: 2;
   padding: 200px;
   position: absolute;
   left: 0px;
   top: 0px;
 }
 
-@keyframes grainSeaOpacity {
+.noise::after {
+  width: 300px;
+  height: 300px;
+  content: 'hallo';
+  color: white;
+  background: conic-gradient(
+    blue 60%,
+    transparent 85%,
+    blue 96%
+  ), url(http://localhost:3000/images/pattern.svg);
+  filter: contrast(190%) brightness(700%);
+  opacity: 0;
+
+  z-index: 1;
+  padding: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.noiseFinal {
+  width: 300px;
+  height: 300px;
+  content: 'hallo';
+  color: white;
+  background: conic-gradient(
+    transparent 0%,
+    blue 25%,
+    transparent 97%
+  ), url(http://localhost:3000/images/pattern.svg);
+  filter: contrast(190%) brightness(700%);
+  opacity: 0;
+  z-index: 4;
+  padding: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+@keyframes grainSeaFirst0 {
   0% {
-    opacity: 0.8;
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  66% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} 
+
+@keyframes grainSeaBefore1 {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  66% {
+    opacity: 0;
   }
 
   100% {
     opacity: 0;
   }
 } 
+
+@keyframes grainSeaAfter2 {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  66% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+} 
+
+@keyframes grainSeaFinal3 {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} 
+
+
 
 /* Chrome-specific
 @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
@@ -85,8 +176,18 @@ body {
 } */
 
 @media (prefers-reduced-motion: no-preference) {
+  .noise {
+    animation: grainSeaFirst0 2s infinite linear;
+  }
+  
   .noise::before {
-    animation: grainSeaOpacity 2s infinite alternate;
+    animation: grainSeaBefore1 2s infinite linear;
+  }
+  .noise::after {
+    animation: grainSeaAfter2 2s infinite linear;
+  }
+  .noiseFinal {
+    animation: grainSeaFinal3 2s infinite linear;
   }
 }
 
