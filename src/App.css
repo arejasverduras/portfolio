@@ -80,7 +80,7 @@ body {
   height: 300px;
   content: 'hallo';
   color: white;
-  background: conic-gradient(
+  background: linear-gradient(
     transparent 0%,
     blue 25%,
     transparent 97%
