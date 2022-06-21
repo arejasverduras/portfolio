@@ -27,33 +27,63 @@ body {
     blue,
     transparent
   ), url(http://localhost:3000/images/pattern.svg); */
- background: conic-gradient(
+ /* background: conic-gradient(
     gold 0%,
     lightblue 18%,
     transparent 25%,
     blue 96%,
     gold 98%
+  ), url(http://localhost:3000/images/pattern.svg); */
+  background: linear-gradient(
+    blue 0%,
+    transparent 25%,
+    blue 66%
+
   ), url(http://localhost:3000/images/pattern.svg);
-  filter: contrast(170%) brightness(500%)
+  filter: contrast(170%) brightness(500%);
+  position: relative;
+  z-index: 100;
 }
 
-/* Chrome-specific */
+.noise::before {
+  content: 'hallo';
+  background: linear-gradient(
+    blue 30%,
+    transparent 55%,
+    blue 96%
+  ), url(http://localhost:3000/images/pattern.svg);
+  filter: contrast(190%) brightness(700%);
+  opacity: 1;
+  transition: opacity 2s;
+  z-index: -100;
+  padding: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+}
+
+.noise:hover:before {
+  opacity: 0;
+}
+
+/* Chrome-specific
 @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
   .noise {
     filter: contrast(290%) brightness(1000%);
   }
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .noise {
-    animation: grainSea 3s infinite alternate-reverse;
+    animation: grainSeaOpacity 3s infinite alternate-reverse;
   }
-}
+} */
 
 @keyframes grainSea {
   0% {
     
-    
+    background-position: 0% 50%;
     filter: contrast(370%) brightness(500%)
   }
   50% {
@@ -63,9 +93,57 @@ body {
 
   100% {
    
-    filter: contrast(240%) brightness(1000%) opacity(0);
+    filter: contrast(240%) brightness(1000%) ;
   }
 } 
+
+@keyframes grainSeaWave {
+  0% {
+    background: conic-gradient(
+      blue 0%,
+      transparent 25%,
+      blue 66%
+
+    ), url(http://localhost:3000/images/pattern.svg);
+    filter: contrast(170%) brightness(500%);
+
+  }
+  50% {
+    background: conic-gradient(
+      blue 15%,
+      transparent 40%,
+      blue 81%
+    ), url(http://localhost:3000/images/pattern.svg);
+    filter: contrast(190%) brightness(700%);
+  }
+
+  100% {
+    background: conic-gradient(
+      blue 30%,
+      transparent 55%,
+      blue 96%
+    ), url(http://localhost:3000/images/pattern.svg);
+    filter: contrast(210%) brightness(900%);
+  }
+} 
+
+@keyframes grainSeaOpacity {
+  0% {
+    
+    opacity: 1;
+
+
+  }
+
+  100% {
+    opacity: 0;
+
+  }
+} 
+
+
+
+
 
 .overlay {
   position: absolute;
@@ -81,6 +159,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
 }
 
 p {
