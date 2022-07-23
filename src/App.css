@@ -193,7 +193,6 @@ nav a {
 }
 
 .projectSlider {
-  /* border: 2px dashed gold; */
   max-width: 1257px;
   height: 500px;
   margin: 50px auto 100px;
@@ -221,6 +220,11 @@ nav a {
 opacity: 1;
 }
 
+.projectSlider:hover {
+
+  animation:none;
+}
+
 .slideDescription {
   z-index: 1;
   min-height: 100%;
@@ -234,13 +238,13 @@ opacity: 1;
   
 }
 
-.slideProjectTitle {
+/* .slideProjectTitle {
   transition: all 0.15s;
 }
 
 .slideProjectTitle:hover {
   letter-spacing: 0.2em;
-}
+} */
 
 @media screen and (max-width: 1257px){
   .projectSlider {
@@ -580,7 +584,7 @@ text-align: left;
 /* Animations */
 
 @media (prefers-reduced-motion: no-preference) {
-   .imageSlider, .projectSlider
+   .imageSlider
   {
     animation: borderFloat  10s infinite alternate;
   }
