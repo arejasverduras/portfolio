@@ -43,9 +43,11 @@ export const ProjectsSlider = ({projects})=>{
                         />
                         </Link>
                        <div className='slideDescription'>
-                            <h2 className='slideProjectTitle'><Link to={`/projects/${project.id}`}>{project.name} || {project.client}</Link></h2>
+                       <Link to={`/projects/${project.id}`}>
+                            <h2 className='slideProjectTitle'>{project.name} || {project.client}</h2>
                             <p className={catLabels(project.cat)}>{project.cat}</p>
                 <p className="projectTileDescription">{project.description}</p>
+                </Link>
                             <ul className="projectTileTech">
                                 {project.tech.map((tech, index) => (
                                     <li key={index} className={techLabels(tech)}>{tech}</li>

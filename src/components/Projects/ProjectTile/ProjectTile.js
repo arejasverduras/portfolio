@@ -14,10 +14,13 @@ export const ProjectTile = ({project}) =>{
                     <img className="projectTileImage" src={tileImage} alt={name}></img>
                 </Link>
                 <div className="projectTileContent">
+                <Link to={`/projects/${id}`}>
                     <h3 className="projectTileTitle"><Link to={`/projects/${id}`}>{name}</Link></h3>
                     <p className={catLabels(cat)}>{cat}</p>
                     <p className="projectTileDescription">{description}</p>
+                    </Link>
                 </div>
+                
                 <ul className="projectTileTech">
                         {tech.map((tech, index) => (
                             <li key={index} className={techLabels(tech)}>{tech}</li>
