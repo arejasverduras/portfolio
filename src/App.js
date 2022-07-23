@@ -13,10 +13,14 @@ import { Contact } from './components/Contact/Contact.js';
 
 function App() {
   let activeStyle = {
-    color: "rgb(94, 231, 255)",
-    backgroundColor: "black",
-    borderRight: "4px solid rgb(94, 231, 255)",
-    borderBottom: "4px solid rgb(94, 231, 255)"
+    color: "white",
+    fontWeight: "bold",
+    letterSpacing: "0.4em",
+    backgroundColor: "#ffd083",
+    borderLeft: "8px solid #ffd083",
+    borderTop: "8px solid #F9A834",
+    borderRight: "8px solid #bceaf6",
+    borderBottom: "8px solid #03919B"
   };
 
   let activeClassName = "NavLinkActive";

@@ -68,20 +68,32 @@ nav ul {
   padding: 8px;
   margin: 0px 4px;
   border: none;
-  transition: all 0.15s;
+ 
   
 }
 
-.NavLink:hover {
-  border-right: 4px solid rgb(94, 231, 255);
-  left: -4px;
+.NavLink {
+  background-color: rgba(255, 255, 255, 0.847);
+  color: black;
+  /* box-shadow: #F9A834 8px 10px; */
+  border-right: 2px solid #bceaf6;
+  border-bottom: 2px solid #03919B;
+  border-left: 2px solid #ffd083;
+  border-top: 2px solid #F9A834;
+  padding: 8px;
+  margin: 0px 4px;
+  z-index: 10;
+  border-radius: 25px;
+  transition: all 0.15s;
 }
 
-/* .NavLink:active {
-  border-right: none;
-
-} */
-
+.NavLink:hover {
+  border-right: 8px solid #F9A834;
+  /* border-left: 4px solid #ffd083;
+  border-top: 4px solid #F9A834; */
+  letter-spacing: 0.2em;
+  left: -6px;
+}
 
 nav a {
   color: white;
@@ -111,13 +123,28 @@ nav a {
 /* Home */
 .heroSection {
   /* border: 1px dashed gold; */
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 
-.heroButtons {
+.heroTitleSection {
+  background-color: rgba(255, 255, 255, 0.847);
+  padding: 40px;
+  /* box-shadow: #F9A834 8px 10px; */
+  border-right: 8px solid #bceaf6;
+  border-bottom: 8px solid #03919B;
+  border-left: 8px solid #ffd083;
+  border-top: 8px solid #F9A834;
+  margin-bottom: 30px;
+  z-index: 10;
+  border-radius: 25px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* .heroButtons {
   border: 1px dashed gold;
   padding: 20px 0;
 }
@@ -132,18 +159,20 @@ nav a {
   border: none;
   border-right: 2px solid white;
   border-bottom: 2px solid white;
-}
+} */
 
-.optionalTextSection, .optionalLogoSection, .aboutPageSummary {
-  background-color: #ece3c5;
+.optionalTextSection {
+  /* background-color: rgba(255, 255, 255, 0.484);
   padding: 20px;
-  box-shadow: #d5b899 8px 10px;
-  margin-bottom: 30px;
+  box-shadow: #ec5064 8px 10px;
+  margin-bottom: 30px; */
+  display: none;
 }
 
 .optionalLogoSection {
-  margin-top: 50px;
-  margin-bottom: 30px;
+  /* margin-top: 50px;
+  margin-bottom: 30px; */
+  display: none;
 }
 
 .logoList {
@@ -239,12 +268,8 @@ opacity: 1;
       display: none;
     }
   }
-
-
 }
   
-
-
 .btn-slide {
 width: 60px;
 height: 60px;
@@ -627,10 +652,11 @@ text-align: left;
 }
 
 .aboutPageSummary {
- /* previously defined with .optionalTextSection */
+  background-color: rgba(255, 255, 255, 0.484);
+  padding: 20px;
+  box-shadow: #ec5064 8px 10px;
+  margin-bottom: 30px;
   max-width: 20%;
-  padding: 20px 60px;
-  background-color: gold;
 }
 
 @media screen and (max-width: 500px) {
@@ -640,13 +666,14 @@ text-align: left;
 }
 
 .aboutTextSection, .contactInfo {
-  background-color: gold;
+  background-color: rgba(255, 255, 255, 0.698);
   padding: 20px;
   opacity: 0.9;
-  box-shadow: gray 8px 10px;
+  box-shadow: #03919B  8px 10px;
   margin: 0 auto;
   margin-bottom: 30px;
   max-width: 400px;
+  border: 1px solid white;
 }
 
 .aboutExtraText {

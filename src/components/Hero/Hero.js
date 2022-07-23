@@ -5,9 +5,9 @@ export const Hero = (props) => {
     return (
         <div className="heroSection" >
             <img className="heroImage" src={MichielHero} alt="Michiel with his dog Arantxa on his shoulders"></img>
-            <div>
+            <div className="heroTitleSection">
                 <h1 className="heroTitle">Michiel Roukens</h1>
-                <p className='heroSub'>FullStack Developer</p>
+                <p className='heroSub'>Full-Stack Developer</p>
             </div>
         </div>
     )
