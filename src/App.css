@@ -1,10 +1,14 @@
 body {
   /* background: linear-gradient(0.85turn,gold,white); */
   background: conic-gradient(
-    gold 0%,
-    white 15%,
-    lightblue 33%,
-    gold 46%
+  lightblue 0%,  
+  gold 4%,
+    white 22%,
+    #ff1b6b 23%,
+     gold, 37%,
+    lightblue 46%,
+    #ff1b6b 77%,
+    lightblue 83%
   );
   
   /* background: conic-gradient(
@@ -16,255 +20,6 @@ body {
   /* background: repeating-conic-gradient(from 0deg, gold 0deg 30deg, white 33deg 60deg, lightblue 63deg 90deg); */
 }
 
-.noise {
-  width: 300px;
-  height: 300px;
-  padding: 200px;
-  margin-bottom: 100px;
-  color: transparent;
-  font-size: 24px;
-  letter-spacing: 1.2em;
-  background: radial-gradient(
-    blue 0%,
-    transparent 25%,
-    blue 66%
-  ), url(http://localhost:3000/images/pattern.svg);
-  filter: contrast(170%) brightness(500%);
-  position: relative;
-  opacity: 1;
-  z-index: 1;
-}
-
-.noise::before {
-  width: 300px;
-  height: 300px;
-  content: 'hallo';
-  color: white;
-  background: radial-gradient(
-    blue 30%,
-    transparent 65%,
-    blue 96%
-
-  ), url(http://localhost:3000/images/pattern.svg);
-  filter: contrast(190%) brightness(700%);
-  opacity: 0;
-  z-index: 2;
-  padding: 200px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.noise::after {
-  width: 300px;
-  height: 300px;
-  content: 'hallo';
-  color: white;
-  background: radial-gradient(
-    blue 60%,
-    transparent 85%,
-    blue 96%
-  ), url(http://localhost:3000/images/pattern.svg);
-  filter: contrast(190%) brightness(700%);
-  opacity: 0;
-
-  z-index: 1;
-  padding: 200px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.noiseFinal {
-  width: 300px;
-  height: 300px;
-  content: 'hallo';
-  color: white;
-  background: radial-gradient(
-    transparent 0%,
-    blue 25%,
-    transparent 97%
-  ), url(http://localhost:3000/images/pattern.svg);
-  filter: contrast(190%) brightness(700%);
-  opacity: 0;
-  z-index: 4;
-  padding: 200px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-@keyframes grainSeaFirst0 {
-  0% {
-    opacity: 1;
-
-  }
-
-  33% {
-    opacity: 1;
-    transform: rotate(180deg);
-  }
-
-  66% {
-    opacity: 1;
-
-  }
-
-  100% {
-    opacity: 1;
-  }
-} 
-
-@keyframes grainSeaBefore1 {
-  0% {
-    opacity: 0;
-  }
-
-  33% {
-    opacity: 1;
-
-  }
-
-  66% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-} 
-
-@keyframes grainSeaAfter2 {
-  0% {
-    opacity: 0;
-  }
-
-  33% {
-    opacity: 0;
-  }
-
-  66% {
-    opacity: 1;
-
-
-  }
-
-  100% {
-    opacity: 0;
-  }
-} 
-
-@keyframes grainSeaFinal3 {
-  0% {
-    opacity: 0;
-
-  }
-
-  33% {
-    opacity: 0;
-  }
-
-  66% {
-    opacity: 0;
-    
-  }
-
-  100% {
-    opacity: 1;
-    filter: brightness(1000%) contrast(500%);
-
-
-  }
-} 
-
-
-
-/* Chrome-specific
-@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
-  .noise {
-    filter: contrast(290%) brightness(1000%);
-  }
-} */
-
-@media (prefers-reduced-motion: no-preference) {
-  .noise {
-    animation: grainSeaFirst0 3s infinite alternate-reverse;
-  }
-  
-  .noise::before {
-    animation: grainSeaBefore1 2s infinite alternate-reverse;
-  }
-  .noise::after {
-    animation: grainSeaAfter2 1s infinite alternate-reverse;
-  }
-  .noiseFinal {
-    animation: grainSeaFinal3 4s infinite alternate-reverse;
-  }
-}
-
-@keyframes grainSea {
-  0% {
-    
-    background-position: 0% 50%;
-    filter: contrast(370%) brightness(500%)
-  }
-  50% {
-    
-    filter: contrast(100%) brightness(200%);
-  }
-
-  100% {
-   
-    filter: contrast(240%) brightness(1000%) ;
-  }
-} 
-
-@keyframes grainSeaWave {
-  0% {
-    background: conic-gradient(
-      blue 0%,
-      transparent 25%,
-      blue 66%
-
-    ), url(http://localhost:3000/images/pattern.svg);
-    filter: contrast(170%) brightness(500%);
-
-  }
-  50% {
-    background: conic-gradient(
-      blue 15%,
-      transparent 40%,
-      blue 81%
-    ), url(http://localhost:3000/images/pattern.svg);
-    filter: contrast(190%) brightness(700%);
-  }
-
-  100% {
-    background: conic-gradient(
-      blue 30%,
-      transparent 55%,
-      blue 96%
-    ), url(http://localhost:3000/images/pattern.svg);
-    filter: contrast(210%) brightness(900%);
-  }
-} 
-
-.overlay {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  /* background: moccasin; */
-  mix-blend-mode: multiply;
-}
-
-.isolate {
-  isolation: isolate;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
 
 p {
   letter-spacing: 0.2pt;
@@ -287,7 +42,7 @@ a {
   max-height: 70px;
   display: flex;
   justify-content: center;
-  border: 1px dashed gold;
+  /* border: 1px dashed gold; */
 }
 
 
@@ -354,7 +109,7 @@ nav a {
 
 /* Home */
 .heroSection {
-  border: 1px dashed gold;
+  /* border: 1px dashed gold; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,7 +134,7 @@ nav a {
 }
 
 .optionalTextSection, .optionalLogoSection, .aboutPageSummary {
-  background-color: white;
+  background-color: rgba(255, 217, 0, 0.603);
   padding: 20px;
   opacity: 0.9;
   box-shadow: gray 8px 10px;
@@ -934,4 +689,261 @@ text-align: left;
 
 .contactValue {
   text-align: right;
+}
+
+/* Animations */
+
+
+.noise {
+  width: 300px;
+  height: 300px;
+  padding: 200px;
+  margin-bottom: 100px;
+  color: transparent;
+  font-size: 24px;
+  letter-spacing: 1.2em;
+  background: radial-gradient(
+    blue 0%,
+    transparent 25%,
+    blue 66%
+  ), url(http://localhost:3000/images/pattern.svg);
+  filter: contrast(170%) brightness(500%);
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+
+.noise::before {
+  width: 300px;
+  height: 300px;
+  content: 'hallo';
+  color: white;
+  background: radial-gradient(
+    blue 30%,
+    transparent 65%,
+    blue 96%
+
+  ), url(http://localhost:3000/images/pattern.svg);
+  filter: contrast(190%) brightness(700%);
+  opacity: 0;
+  z-index: 2;
+  padding: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.noise::after {
+  width: 300px;
+  height: 300px;
+  content: 'hallo';
+  color: white;
+  background: radial-gradient(
+    blue 60%,
+    transparent 85%,
+    blue 96%
+  ), url(http://localhost:3000/images/pattern.svg);
+  filter: contrast(190%) brightness(700%);
+  opacity: 0;
+
+  z-index: 1;
+  padding: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.noiseFinal {
+  width: 300px;
+  height: 300px;
+  content: 'hallo';
+  color: white;
+  background: radial-gradient(
+    transparent 0%,
+    blue 25%,
+    transparent 97%
+  ), url(http://localhost:3000/images/pattern.svg);
+  filter: contrast(190%) brightness(700%);
+  opacity: 0;
+  z-index: 4;
+  padding: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+@keyframes grainSeaFirst0 {
+  0% {
+    opacity: 1;
+    transform: rotate(540deg);
+  }
+
+  33% {
+    opacity: 1;
+
+  }
+
+  66% {
+    opacity: 1;
+
+  }
+
+  100% {
+    opacity: 1;
+  }
+} 
+
+@keyframes grainSeaBefore1 {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 1;
+
+  }
+
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+} 
+
+@keyframes grainSeaAfter2 {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  66% {
+    opacity: 1;
+
+
+  }
+
+  100% {
+    opacity: 0;
+  }
+} 
+
+@keyframes grainSeaFinal3 {
+  0% {
+    opacity: 0;
+
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  66% {
+    opacity: 0;
+    
+  }
+
+  100% {
+    opacity: 1;
+    filter: brightness(1000%) contrast(500%);
+
+
+  }
+} 
+
+
+
+/* Chrome-specific
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+  .noise {
+    filter: contrast(290%) brightness(1000%);
+  }
+} */
+
+@media (prefers-reduced-motion: no-preference) {
+  .noise {
+    animation: grainSeaFirst0 3s infinite alternate-reverse;
+  }
+  
+  .noise::before {
+    animation: grainSeaBefore1 2s infinite alternate-reverse;
+  }
+  .noise::after {
+    animation: grainSeaAfter2 1s infinite alternate-reverse;
+  }
+  .noiseFinal {
+    animation: grainSeaFinal3 4s infinite alternate-reverse;
+  }
+
+  .contactInfo {
+    animation: grainSeaFirst0 3s 1;
+  }
+}
+
+@keyframes grainSea {
+  0% {
+    
+    background-position: 0% 50%;
+    filter: contrast(370%) brightness(500%)
+  }
+  50% {
+    
+    filter: contrast(100%) brightness(200%);
+  }
+
+  100% {
+   
+    filter: contrast(240%) brightness(1000%) ;
+  }
+} 
+
+@keyframes grainSeaWave {
+  0% {
+    background: conic-gradient(
+      blue 0%,
+      transparent 25%,
+      blue 66%
+
+    ), url(http://localhost:3000/images/pattern.svg);
+    filter: contrast(170%) brightness(500%);
+
+  }
+  50% {
+    background: conic-gradient(
+      blue 15%,
+      transparent 40%,
+      blue 81%
+    ), url(http://localhost:3000/images/pattern.svg);
+    filter: contrast(190%) brightness(700%);
+  }
+
+  100% {
+    background: conic-gradient(
+      blue 30%,
+      transparent 55%,
+      blue 96%
+    ), url(http://localhost:3000/images/pattern.svg);
+    filter: contrast(210%) brightness(900%);
+  }
+} 
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background: moccasin; */
+  mix-blend-mode: multiply;
+}
+
+.isolate {
+  isolation: isolate;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
