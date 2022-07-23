@@ -27,6 +27,7 @@ function App() {
   
   return (
     <div className="App">
+      <div className="backgroundCenterDot"></div>
       <header className="App-header">
       <nav>
         <ul>
@@ -83,7 +84,9 @@ function App() {
             </main>
         }/>
       </Routes>
+      <div className="backgroundCenterDot"></div>
     </main>
+
     </div>
   );
 }
