@@ -50,7 +50,9 @@ a {
 
 
 .App-header {
-  max-height: 70px;
+  height: 70px;
+  padding-top: 20px;
+  padding-bottom: 12px;
   display: flex;
   justify-content: center;
   /* border: 1px dashed gold; */
