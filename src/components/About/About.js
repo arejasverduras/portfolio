@@ -4,7 +4,7 @@ import { HeroOptionalText } from '../Hero/HeroOptionalText/HeroOptionalText';
 
 export const About = (props) => {
     return (
-        <>
+        <div className="About">
             <h1 style={{"display":"none"}}>About</h1>
             <section className="aboutTopSection">
                  <img className="heroImage" src={MichielHero}></img>
@@ -33,6 +33,6 @@ export const About = (props) => {
                 </p>
                 </div>
         </section>
-        </>
+        </div>
     )
 }

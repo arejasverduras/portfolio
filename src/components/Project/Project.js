@@ -30,7 +30,7 @@ export const Project = () =>{
     },[id])
 
     return (
-        <>
+        <div className="Project">
         <article className='projectContainer'>
             <h1 className="projectTitle">{name} || {client} || {type} </h1>
             <ImageSlider images={images}/>
@@ -64,6 +64,6 @@ export const Project = () =>{
                 >Next project
             </Link>
         </div>
-        </>
+        </div>
     )
 }
