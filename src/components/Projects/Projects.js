@@ -14,12 +14,12 @@ export const Projects = (props) => {
     const filteredProjects = projects;
     
     return (
-        <>
-            <h1 className='Projects'>Projects</h1>
+        <div className="Projects">
+            <h1 className='ProjectsH1'>Projects</h1>
             <ProjectsSlider projects={filteredProjects} />
             {/* scroll down button (optional) */}
             {/* <ProjectsFilter />  / <ProjectSearch /> */}
             <ProjectList projects={filteredProjects} />
-        </>
+        </div>
     )
 }

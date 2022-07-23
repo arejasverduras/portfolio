@@ -131,12 +131,18 @@ nav a {
 /* Main */
 
 /* Home */
+
+.Home, .Projects {
+  background: rgba(255, 255, 255, 0.625)
+}
+
 .heroSection {
   /* border: 1px dashed gold; */
   /* display: flex; */
   /* justify-content: center;
   align-items: center;
   flex-wrap: wrap; */
+  opacity: 1;
 }
 
 .heroTitleSection {
@@ -198,7 +204,7 @@ nav a {
 
 /* Projects */
 
-.Projects {
+.ProjectsH1 {
   display: none;
 }
 
