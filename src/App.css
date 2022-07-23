@@ -1,16 +1,16 @@
 body {
   /* background: linear-gradient(0.25turn,#93E9BE,#93E9BE, white); */
-  /* background: conic-gradient(
-  lightblue 0%,  
-  gold 4%,
+  background: conic-gradient(
+  #bceaf6 0%,  
+  #ffd083 4%,
     white 22%,
-    #ff1b6b 23%,
-     gold, 37%,
-    lightblue 46%,
-    #ff1b6b 77%,
-    lightblue 83%
-  ); */
-  background-color: 	#fe9866;
+    #F9A834 23%,
+    #ffd083, 37%,
+     #bceaf6 46%,
+     #03919B 77%,
+    #bceaf6  83%
+  );
+  /* background-color: 	#fe9866; */
   
   /* background: conic-gradient(
     lightblue 0%,
