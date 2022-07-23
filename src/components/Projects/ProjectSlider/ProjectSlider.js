@@ -36,13 +36,14 @@ export const ProjectsSlider = ({projects})=>{
                     <div 
                     key={index}
                     className={slideIndex === index + 1? "projectSlide active-anim": "projectSlide"}>
-                        
+                        <Link to={`/projects/${project.id}`}>
                         <img
                         src={process.env.PUBLIC_URL + `/images/projectImages/sliderImages/image${index + 1}.png`} 
                         alt="slider"
                         />
+                        </Link>
                        <div className='slideDescription'>
-                            <h2><Link to={`/projects/${project.id}`}>{project.name} || {project.client}</Link></h2>
+                            <h2 className='slideProjectTitle'><Link to={`/projects/${project.id}`}>{project.name} || {project.client}</Link></h2>
                             <p className={catLabels(project.cat)}>{project.cat}</p>
                 <p className="projectTileDescription">{project.description}</p>
                             <ul className="projectTileTech">

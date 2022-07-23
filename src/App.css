@@ -231,7 +231,15 @@ opacity: 1;
   padding: 20px;
   position: absolute;
   box-shadow: rgba(0, 0, 0, 0.152) -2px 5px 5px;
+  
+}
 
+.slideProjectTitle {
+  transition: all 0.15s;
+}
+
+.slideProjectTitle:hover {
+  letter-spacing: 0.2em;
 }
 
 @media screen and (max-width: 1257px){
