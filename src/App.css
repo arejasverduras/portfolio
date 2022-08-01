@@ -491,23 +491,12 @@ height: 30%;
 }
 
 .projectTitle {
-  background-color: white;
-  max-width: 50%;
-  margin: 0 auto;
-  margin-bottom: -1px;
-  padding: 10px;
-  border: 1px solid black;
-  z-index: 2;
-  text-align: center;
-  border-top-right-radius: 7% 99%;
-  border-bottom-left-radius: 28% 12%;
-  border-bottom-right-radius: 12.5% 25%;
-  border-top-left-radius: 12% 18%;
+ /* projectTitle styles go here */
 }
 
 .imageSlider {
-max-width: 800px;
-height: 400px;
+max-width: 1257px;
+height: 500px;
 margin: 0 auto;
 position: relative;
 overflow: hidden;

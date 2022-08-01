@@ -32,22 +32,20 @@ export const Project = () =>{
     return (
         <div className="Project">
         <article className='projectContainer'>
-            <h1 className="projectTitle">{name} || {client} || {type} </h1>
             <ImageSlider images={images}/>
             <div className="projectContent">
+            <h1 className="projectTitle">{name} || {client} || {type} </h1>
                     <p className={catLabels(cat)}>{cat}</p>
+                    <p className="projectDescription">{description}</p>
+                    <ul className="projectLinks">
+                        <li><a href={demoLink} target="blank">Live Demo</a></li>
+                        <li><a href={sourceLink} target="blank">View Source on GitHub</a></li>
+                    </ul>
                     <ul className="projectTileTech">
                          {tech.map((tech, index) => (
                             <li key={index} className={techLabels(tech)}>{tech}</li>
                         ))}
                     </ul>
-                    <ul className="projectLinks">
-                        <li><a href={demoLink} target="blank">Live Demo</a></li>
-                        <li><a href={sourceLink} target="blank">View Source on GitHub</a></li>
-                    </ul>
-                    <p className="projectDescription">{description}</p>
-
-           
             </div>
 
         </article>
