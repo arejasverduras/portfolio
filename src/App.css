@@ -570,39 +570,52 @@ text-align: left;
 } */
 
 .projectButton {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 8px 20px;
-  box-shadow:rgba(0, 0, 0, 0.837) 1px 1px;
+  /* box-shadow:rgba(0, 0, 0, 0.837) 1px 1px; */
+  letter-spacing: 0.3em;
   top: 0;
   left: 0;
-  border-top-right-radius: 50% 99%;
-  border-top-left-radius: 88% 12%;
-  border-bottom-left-radius: 12.5% 25%;
-  border-bottom-right-radius: 12% 88%;
+  border-top-right-radius: 50%;
+  /* border-top-left-radius: 88% 12%; */
+  /* border-bottom-left-radius: 12.5% 25%; */
+  border-bottom-right-radius: 25%;
   transition: all 500ms;
+  /* border-right: 8px solid #bceaf6;
+  border-bottom: 8px solid #03919B;
+  border-left: 8px solid #ffd083;
+  border-top: 8px solid #F9A834; */
+}
+
+.projectButton {
+  padding: 25px;
+  background-color: #ffd083;
 }
 
 .projectButton:hover {
   position: relative;
   top: -6px;
   left: -6px;
-  box-shadow:rgba(0, 0, 0, 0.837) 6px 6px;
+  box-shadow:#03919B 6px 6px;
 }
-
-.projectButton:active {
-  top: 10px;
-  left:10px;
-  box-shadow: rgba(0, 0, 0, 0.837) -3px -3px;
-  border-right: 10px solid rgba(0, 0, 0, 0.837);
-  border-bottom: 10px solid rgba(0, 0, 0, 0.837);
-}
-
 
 .prevButton {
   border-top-left-radius: 50% 99%;
   border-top-right-radius: 88% 12%;
   border-bottom-left-radius: 12.5% 25%;
   border-bottom-right-radius: 12% 88%;
+}
+
+.prevButton:hover {
+  top: -6px;
+  left: -6px;
+  box-shadow: #bceaf6 6px 6px;
+}
+
+.projectButton:active {
+  top: 0px;
+  left: 0px;
+  box-shadow: none;
 }
 
 /* Animations */
