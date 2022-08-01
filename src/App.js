@@ -21,7 +21,7 @@ function App() {
     borderTop: "8px solid #F9A834",
     borderRight: "8px solid #bceaf6",
     borderBottom: "8px solid #03919B",
-    boxShadow: "#ec5064 4px 4px"
+    boxShadow: "#ec506575 4px 4px"
   };
 
   let activeClassName = "NavLinkActive";

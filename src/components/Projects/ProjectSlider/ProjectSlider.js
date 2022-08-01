@@ -36,7 +36,7 @@ export const ProjectsSlider = ({projects})=>{
                     <div 
                     key={index}
                     className={slideIndex === index + 1? "projectSlide active-anim": "projectSlide"}>
-                        <Link to={`/projects/${project.id}`}>
+                        <Link to={`/projects/${slideIndex}`}>
                         <img
                         src={process.env.PUBLIC_URL + `/images/projectImages/sliderImages/image${index + 1}.png`} 
                         alt="slider"

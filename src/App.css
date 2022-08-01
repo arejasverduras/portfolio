@@ -79,8 +79,7 @@ nav ul {
   padding: 8px;
   margin: 0px 4px;
   border: none;
- 
-  
+  color: #ec506575;
 }
 
 .NavLink {
@@ -108,7 +107,7 @@ nav ul {
   position:relative;
   left: -8px;
   top: -4px;
-  box-shadow: #ec5064 4px 4px;
+  box-shadow: #ec5064 1px 1px;
   margin-left: 16px;
   margin-right: 16px;
 }
