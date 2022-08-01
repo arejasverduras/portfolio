@@ -99,6 +99,11 @@ nav ul {
   transition: all 0.25s;
 }
 
+.NavLinkPlay {
+  border: none;
+  border-radius: 25px;
+}
+
 .NavLink:hover {
   border-right: 4px solid #F9A834;
   /* border-left: 4px solid #ffd083;

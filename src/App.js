@@ -10,6 +10,7 @@ import { About } from './components/About/About';
 import { Projects} from './components/Projects/Projects';
 import { Project } from './components/Project/Project';
 import { Contact } from './components/Contact/Contact.js';
+import { Play } from './components/Play/Play';
 
 function App() {
   let activeStyle = {
@@ -22,6 +23,14 @@ function App() {
     borderRight: "8px solid #bceaf6",
     borderBottom: "8px solid #03919B",
     boxShadow: "#ec506575 4px 4px"
+  };
+
+  let activePlayStyle = {
+    backgroundColor: "#ec506575",
+    padding: "12px",
+    letterSpacing: "0.4em",
+    fontWeight: "bold",
+    marginLeft: "80px"
   };
 
   let activeClassName = "NavLinkActive";
@@ -65,6 +74,14 @@ function App() {
               Contact
             </NavLink>
           </li>
+          <li>
+            <NavLink to={"/play"} style={({ isActive }) =>
+               isActive ? activePlayStyle: undefined
+               }
+               className="NavLinkPlay">
+              Play
+            </NavLink>
+          </li>
         </ul>
       </nav>
       </header>
@@ -75,7 +92,8 @@ function App() {
               {/* <Route path=":projectId" element={<Project/>}/> */}     
         <Route path="/projects/:projectId" element={<Project/>}/>
         <Route path="/about" element={<About/>}/>
-        <Route exact path="/contact" element={<Contact/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/play" element={<Play/>}/>
         <Route 
           path="*"
           element={
