@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import ProjectSliderBtn from './ProjectSliderBtn';
 import { catLabels, techLabels } from '../projectsFeatures';
 import { Link } from 'react-router-dom';
@@ -7,6 +7,10 @@ export const ProjectsSlider = ({projects})=>{
     //load an array with objects for the slider
 
     const [slideIndex, setSlideIndex] = useState(1);
+
+    const autoScroll = true;
+    let slideInterval;
+    let intervalTime = 5000;
 
     const nextSlide = () => {
         if(slideIndex !== projects.length) {
@@ -24,9 +28,20 @@ export const ProjectsSlider = ({projects})=>{
         }
     }
 
+    function auto(){
+        slideInterval = setInterval(nextSlide, intervalTime)
+    }
+
     const moveDot = index => {
         setSlideIndex(index);
     }
+
+    useEffect(()=>{
+        if (autoScroll) {
+            auto();
+        }
+        return () => clearInterval(slideInterval);
+    },[slideIndex]);
     
     return (
         <div className="projectSlider">
