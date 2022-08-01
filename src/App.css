@@ -615,10 +615,10 @@ text-align: left;
 @media (prefers-reduced-motion: no-preference) {
    .imageSlider
   {
-    animation: borderFloat  10s infinite alternate;
+    /* animation: borderFloat  10s infinite alternate; */
   }
   .projectContent {
-    animation: borderFloatSoft 20s infinite alternate;
+    /* animation: borderFloatSoft 20s infinite alternate; */
   }
 }
 
