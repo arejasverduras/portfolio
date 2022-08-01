@@ -23,11 +23,6 @@ export const ContactInfo = (props) => {
                     </tbody>
                 </table>
             </div>
-            <div className="isolate">
-                <div className="noise">hallo</div>
-                <div className="noiseFinal">hallo</div>
-                <div className="overlay"></div>
-            </div>
         </>
     )
 }
