@@ -1,10 +1,16 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import ProjectSliderBtn from '../../components/Projects/ProjectSlider/ProjectSliderBtn.js'
 
 export const ImageSlider = ({images})=>{
     //load an array with images from props
 
     const [slideIndex, setSlideIndex] = useState(1);
+
+    const autoScroll = true;
+    let slideInterval;
+    let intervalTime = 5000;
+
+
 
     const nextSlide = () => {
         if(slideIndex !== images.length) {
@@ -22,9 +28,20 @@ export const ImageSlider = ({images})=>{
         }
     }
 
+    function auto(){
+        slideInterval = setInterval(nextSlide, intervalTime)
+    }
+
     const moveDot = index => {
         setSlideIndex(index);
     }
+
+    useEffect(()=>{
+        if (autoScroll) {
+            auto();
+        }
+        return () => clearInterval(slideInterval);
+    },[slideIndex]);
     
     return (
         <div className="imageSlider">
