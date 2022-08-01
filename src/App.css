@@ -467,6 +467,10 @@ height: 30%;
 
 /* Project */
 
+.Project {
+  background: rgba(255, 255, 255, 0.95)
+}
+
 @keyframes easeIn {
   from {
     opacity: 0;
@@ -521,12 +525,12 @@ text-align: left;
   margin: 50px auto;
   padding: 20px;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.837) 5px 5px;
   border: 1px solid black;
-  /* border-top-right-radius: 7% 99%;
-  border-bottom-left-radius: 28% 12%;
-  border-bottom-right-radius: 12.5% 25%;
-  border-top-left-radius: 12% 18%; */
+  border-right: 8px solid #bceaf6;
+  border-bottom: 8px solid #03919B;
+  border-left: 8px solid #ffd083;
+  border-top: 8px solid #F9A834;
+  /* box-shadow: #ec5064 8px 8px; */
   border-radius: 15px;
   overflow: hidden;
 }
@@ -690,11 +694,12 @@ text-align: left;
   border-bottom: 8px solid #03919B;
   border-left: 8px solid #ffd083;
   border-top: 8px solid #F9A834;
+  box-shadow: #ec5064 8px 8px;
   margin-bottom: 30px;
   z-index: 10;
   border-radius: 25px;
   margin: 0 auto;
-  box-shadow: #ec5064 8px 8px;
+  
   max-width: 20%;
 }
 
@@ -708,11 +713,15 @@ text-align: left;
   background-color: rgba(255, 255, 255, 0.698);
   padding: 20px;
   opacity: 0.9;
-  box-shadow: #03919B  8px 10px;
   margin: 0 auto;
   margin-bottom: 30px;
   max-width: 400px;
-  border: 1px solid white;
+  border-right: 8px solid #bceaf6;
+  border-bottom: 8px solid #03919B;
+  border-left: 8px solid #ffd083;
+  border-top: 8px solid #F9A834;
+  /* box-shadow: #ec5064 8px 8px; */
+  border-radius: 25px;
 }
 
 .aboutExtraText {
