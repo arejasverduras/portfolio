@@ -30,7 +30,8 @@ function App() {
     padding: "12px",
     letterSpacing: "0.4em",
     fontWeight: "bold",
-    marginLeft: "80px"
+    marginLeft: "80px",
+    animation: "backgroundChange 3s infinite alternate"
   };
 
   let activeClassName = "NavLinkActive";

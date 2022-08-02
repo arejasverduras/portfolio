@@ -778,6 +778,14 @@ text-align: left;
 
 /* Animations */
 
+@keyframes backgroundChange {
+  from {
+    background-color: ec506575;
+  }
+  to {
+    background-color: #03919B;
+  }
+}
 
 .noise {
   width: 300px;
