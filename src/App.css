@@ -144,7 +144,7 @@ nav a {
 
 /* Home */
 
-.Home, .Projects, .Project, .About, .Contact {
+.Home, .Projects, .Project, .About {
   background: rgba(255, 255, 255, 0.625)
 }
 
@@ -743,6 +743,10 @@ text-align: left;
 }
 
 /* Contact */
+
+.Contact {
+  min-height: 80vh;
+}
 
 .contactTopSection {
   margin-top: 5%;
