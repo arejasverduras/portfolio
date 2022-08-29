@@ -36,7 +36,7 @@ const projectsSlice = createSlice({
                     client: "Codecademy",
                     description: "Interactive Portfolio to showcase professional and personal projects. Searchable and full with easter eggs'.",
                     tileImage: "/images/projectImages/portfolioTile.png",
-                    images: ["/images/projectImages/portfolio/portfolio1.png"],
+                    images: ["/images/projectImages/portfolio/portfolio1.png", "/images/projectImages/portfolio/portfolio2.png", "/images/projectImages/portfolio/portfolio3.png", "/images/projectImages/portfolio/portfolio4.png"],
                     tech: ['Redux', 'React', 'JavaScript' ,'HTML','CSS'],
                     cat: 'Back-End',
                     type: 'Personal',
