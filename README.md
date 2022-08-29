@@ -16,7 +16,7 @@
 
 
 ## General Information
-This app is an up to date Portfolio of my work experience so far. It displays project that stood out in terms of technology and learning  curve. It also serves as another practice project working with Redux & React.
+This app is an up to date Portfolio of my coding experience so far. It displays project that stood out in terms of technology and learning  curve. It also serves as another practice project working with Redux & React.
 
 ## Technologies Used
 - Redux 
@@ -37,8 +37,10 @@ This app is an up to date Portfolio of my work experience so far. It displays pr
 
 
 ## Screenshots
-
-
+![portfolio1](https://user-images.githubusercontent.com/62893479/187303676-4c64a979-09f6-482a-9513-2e3f10f4f733.png)
+![portfolio2](https://user-images.githubusercontent.com/62893479/187303680-63388946-2506-4309-aee2-1c591648d5af.png)
+![portfolio3](https://user-images.githubusercontent.com/62893479/187303683-ca93ea5e-2844-4147-b8a0-143226d91e4a.png)
+![portfolio4](https://user-images.githubusercontent.com/62893479/187303687-27a95653-aacf-4bbb-b622-21e2ff6d817e.png)
 
 ## Usage
 Navigate to the Projects page and select a Project for more information
