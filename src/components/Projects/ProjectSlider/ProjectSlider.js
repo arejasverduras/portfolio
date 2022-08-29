@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react';
+import { useSelector } from 'react-redux';
 import ProjectSliderBtn from './ProjectSliderBtn';
+import { selectPlaceHolder } from '../ProjectsSlice';
 import { catLabels, techLabels } from '../projectsFeatures';
 import { Link } from 'react-router-dom';
 
 export const ProjectsSlider = ({projects})=>{
     //load an array with objects for the slider
-
+    const placeHolderImage = useSelector(selectPlaceHolder);
     const [slideIndex, setSlideIndex] = useState(1);
 
     const autoScroll = true;
@@ -53,7 +55,8 @@ export const ProjectsSlider = ({projects})=>{
                     className={slideIndex === index + 1? "projectSlide active-anim": "projectSlide"}>
                         <Link to={`/projects/${slideIndex}`}>
                         <img
-                        src={process.env.PUBLIC_URL + `/images/projectImages/sliderImages/image${index + 1}.png`} 
+                        // src={process.env.PUBLIC_URL + `/images/projectImages/sliderImages/image${index + 1}.png`} 
+                        src={process.env.PUBLIC_URL + `${project.images[0] || placeHolderImage}`} 
                         alt="slider"
                         />
                         </Link>

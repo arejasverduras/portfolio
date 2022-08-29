@@ -56,8 +56,21 @@ const projectsSlice = createSlice({
                     demoLink: "https://arejasverduras.github.io/koekboek/",
                     sourceLink: "https://github.com/arejasverduras/koekboek"
                 },
-
-            ]
+                {
+                    id: 5,
+                    name: "Koekboek",
+                    client: "Arejas",
+                    description: "Interactive JavaScript Project.",
+                    tileImage: "/images/projectImages/koekboekTile.png",
+                    images: [],
+                    tech: ['JavaScript', 'HTML', 'CSS'],
+                    cat: 'Full-Stack',
+                    type: 'Personal',
+                    demoLink: "https://arejasverduras.github.io/koekboek/",
+                    sourceLink: "https://github.com/arejasverduras/koekboek"
+                },
+            ],
+            placeHolderImage: '/images/projectImages/NoImage.png'
         },
         reducers: {
             addProject: (state, action) => {
@@ -71,6 +84,7 @@ export const { addProject } = projectsSlice.actions;
 
 //create and export sliceSelector
 export const selectProjects = state => state.projects.projects;
+export const selectPlaceHolder = state => state.projects.placeHolderImage;
 
 //export the reducer as default
 export default projectsSlice.reducer;
