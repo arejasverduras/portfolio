@@ -23,7 +23,6 @@ This app is an up to date Portfolio of my coding experience so far. It displays 
 - React
 - Javascript
 
-
 ## Features
 - All content loaded dynamically from a database. Currently a JS object in the redux store.
 - Project overview page with project slider and project Tile
@@ -54,11 +53,14 @@ Room for improvement:
 - smaller images for responsive states
 - Personal pictures
 - General styling: buttons, links
+- expand project descriptions
+- load more interesting project from Codecademy courses
 
 To-Do: 
 - Load project description from MarkDown file (excerpt from Readme's like this!) 
 - Add Search functionality
 - Filter by category / tech / type 
+- Add content to an admin section of the app
 
 ## Contact
 Created by [@arejasverduras](https://arejasportfolio.surge.sh/) - feel free to contact me!
