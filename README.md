@@ -45,7 +45,7 @@ This app is an up to date Portfolio of my coding experience so far. It displays 
 Navigate to the Projects page and select a Project for more information
 
 ## Project Status
-Project is:  _in_progress_ 
+Project is:  _in progress_ 
 
 ## Room for Improvement
 
