@@ -10,7 +10,7 @@ const projectsSlice = createSlice({
                     client: "Arejas",
                     description: "Interactive Resume to apply for Front-end / React jobpositions. Fully searchable, printable and 'flippable'.",
                     tileImage: "/images/projectImages/resumeTile.png",
-                    images: ["/images/projectImages/resume/resume1.png","/images/projectImages/resume/resume2.png","/images/projectImages/resume/resume3.png"],
+                    images: ["/images/projectImages/resume/resume1.png","/images/projectImages/resume/resume2.png","/images/projectImages/resume/resume3.png","/images/projectImages/resume/resume4.png","/images/projectImages/resume/resume5.png", "/images/projectImages/resume/resume6.png"],
                     tech: ['React','JavaScript', 'HTML', 'CSS'],
                     cat: 'Front-End',
                     type: 'Personal',
@@ -19,19 +19,32 @@ const projectsSlice = createSlice({
                 },
                 {
                     id: 2,
+                    name: "ShredFish",
+                    client: "Arejas",
+                    description: "Global Surf Forecasting app for daily use. Get notified when the weather and ocean conditions are optimal for the sport of wave Surfing. Personal Portfolio Project to display ability to work with external api's.",
+                    tileImage: "/images/projectImages/shredfishTile.png",
+                    images: ["/images/projectImages/shredfish/shredfish1.png","/images/projectImages/shredfish/shredfish2.png","/images/projectImages/shredfish/shredfish3.png"],
+                    tech: ['Redux', 'React', 'JavaScript' ,'HTML','CSS'],
+                    cat: 'Front-End',
+                    type: 'Personal',
+                    demoLink: "https://shredfish.surge.sh",
+                    sourceLink: "https://github.com/arejasverduras/shredfish"
+                },
+                {
+                    id: 3,
                     name: "Portfolio",
                     client: "Codecademy",
                     description: "Interactive Portfolio to showcase professional and personal projects. Searchable and full with easter eggs'.",
                     tileImage: "/images/projectImages/portfolioTile.png",
-                    images: [],
+                    images: ["/images/projectImages/portfolio/portfolio1.png"],
                     tech: ['Redux', 'React', 'JavaScript' ,'HTML','CSS'],
                     cat: 'Back-End',
                     type: 'Personal',
-                    demoLink: "http://localhost:3000/",
+                    demoLink: "https://arejasportfolio.surge.sh",
                     sourceLink: "https://github.com/arejasverduras/portfolio"
                 },
                 {
-                    id: 3,
+                    id: 4,
                     name: "Koekboek",
                     client: "Arejas",
                     description: "Interactive JavaScript Project.",
@@ -42,7 +55,8 @@ const projectsSlice = createSlice({
                     type: 'Personal',
                     demoLink: "https://arejasverduras.github.io/koekboek/",
                     sourceLink: "https://github.com/arejasverduras/koekboek"
-                }
+                },
+
             ]
         },
         reducers: {
