@@ -56,19 +56,6 @@ const projectsSlice = createSlice({
                     demoLink: "https://arejasverduras.github.io/koekboek/",
                     sourceLink: "https://github.com/arejasverduras/koekboek"
                 },
-                {
-                    id: 5,
-                    name: "Koekboek",
-                    client: "Arejas",
-                    description: "Interactive JavaScript Project.",
-                    tileImage: "/images/projectImages/koekboekTile.png",
-                    images: [],
-                    tech: ['JavaScript', 'HTML', 'CSS'],
-                    cat: 'Full-Stack',
-                    type: 'Personal',
-                    demoLink: "https://arejasverduras.github.io/koekboek/",
-                    sourceLink: "https://github.com/arejasverduras/koekboek"
-                },
             ],
             placeHolderImage: '/images/projectImages/NoImage.png'
         },
