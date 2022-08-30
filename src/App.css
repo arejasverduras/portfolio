@@ -154,6 +154,12 @@ nav a {
   box-shadow: #ec5064 8px 8px;
 }
 
+.heroImage {
+  max-height: 400px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
 .optionalTextSection {
   display: none;
 }
