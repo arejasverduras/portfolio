@@ -31,6 +31,7 @@ This app is an up to date Portfolio of my coding experience so far. It displays 
 - Project Type labels (personal, employed)
 - Project page with image slider. 
 - Project page hosts links to demo page & github source
+- Renders project's Readme MarkDown file directly from github as a project description
 - Home, About and Contact page
 - "Play" page with experiments in css animations.
 
@@ -53,11 +54,10 @@ Room for improvement:
 - smaller images for responsive states
 - Personal pictures
 - General styling: buttons, links
-- expand project descriptions
 - load more interesting project from Codecademy courses
 
 To-Do: 
-- Load project description from MarkDown file (excerpt from Readme's like this!) 
+
 - Add Search functionality
 - Filter by category / tech / type 
 - Add content to an admin section of the app
