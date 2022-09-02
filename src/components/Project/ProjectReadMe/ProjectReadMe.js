@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Markdown from 'markdown-to-jsx';
+import NoReadMe from './NoReadMe.md';
 
 export const ProjectReadMe = ({readMe}) => {
-    const fileLocation = readMe.length > 1? readMe : './NoReadMe.md';
+
+    const fileLocation = readMe.length > 5? readMe : NoReadMe;
     const [post, setPost] = useState('');
 
     useEffect(()=>{
