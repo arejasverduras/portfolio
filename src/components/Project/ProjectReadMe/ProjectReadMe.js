@@ -7,6 +7,7 @@ export const ProjectReadMe = () => {
 
     useEffect(()=>{
         import(`../../../markdown/${file_name}`)
+        // import ('https://raw.githubusercontent.com/arejasverduras/portfolio/main/README.md')
             .then(res => {
                 fetch(res.default)
                     .then(res => res.text())

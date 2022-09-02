@@ -5,6 +5,7 @@ import { selectProjects } from '../Projects/ProjectsSlice';
 import { Link } from 'react-router-dom';
 import { catLabels, techLabels } from '../Projects/projectsFeatures';
 import { ImageSlider } from '../../features/ImageSlider/ImageSlider';
+import { ProjectReadMe } from './ProjectReadMe/ProjectReadMe';
 
 export const Project = () =>{
     const params = useParams();
@@ -46,6 +47,9 @@ export const Project = () =>{
                             <li key={index} className={techLabels(tech)}>{tech}</li>
                         ))}
                     </ul>
+                    <h2 className="readmeHeader">{name} Read me</h2>
+                    <hr></hr>
+                    <ProjectReadMe />
             </div>
 
         </article>
