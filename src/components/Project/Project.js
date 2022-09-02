@@ -41,13 +41,14 @@ export const Project = () =>{
                     <ul className="projectLinks">
                         <li><a href={demoLink} target="blank">Live Demo</a></li>
                         <li><a href={sourceLink} target="blank">View Source on GitHub</a></li>
+                        <li><a href={'#readMe'} >View ReadMe</a></li>
                     </ul>
                     <ul className="projectTileTech">
                          {tech.map((tech, index) => (
                             <li key={index} className={techLabels(tech)}>{tech}</li>
                         ))}
                     </ul>
-                    <h2 className="readmeHeader">Read Me</h2>
+                    <h2 className="readmeHeader" id="readMe">Read Me</h2>
                     <p><i>README.md loaded from project's github repository</i></p>
                     <hr></hr>
                     <ProjectReadMe readMe={readMe} />
