@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Markdown from 'markdown-to-jsx';
 
-export const ProjectReadMe = () => {
-    const fileLocation = 'https://raw.githubusercontent.com/arejasverduras/portfolio/main/README.md';
+export const ProjectReadMe = ({readMe}) => {
+    const fileLocation = readMe.length > 1? readMe : './NoReadMe.md';
     const [post, setPost] = useState('');
 
     useEffect(()=>{
@@ -13,7 +13,7 @@ export const ProjectReadMe = () => {
     });
 
     return (
-        <div className="Readme container">
+        <div className="ReadMe">
             <Markdown>
                 {post}
             </Markdown>

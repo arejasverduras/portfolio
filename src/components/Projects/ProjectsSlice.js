@@ -15,7 +15,8 @@ const projectsSlice = createSlice({
                     cat: 'Front-End',
                     type: 'Personal',
                     demoLink: "https://arejasresume.surge.sh",
-                    sourceLink: "https://github.com/arejasverduras/resume"
+                    sourceLink: "https://github.com/arejasverduras/resume",
+                    readMe: ""
                 },
                 {
                     id: 2,
@@ -28,7 +29,8 @@ const projectsSlice = createSlice({
                     cat: 'Front-End',
                     type: 'Personal',
                     demoLink: "https://shredfish.surge.sh",
-                    sourceLink: "https://github.com/arejasverduras/shredfish"
+                    sourceLink: "https://github.com/arejasverduras/shredfish",
+                    readMe: ""
                 },
                 {
                     id: 3,
@@ -41,7 +43,8 @@ const projectsSlice = createSlice({
                     cat: 'Front-End',
                     type: 'Personal',
                     demoLink: "https://arejasportfolio.surge.sh",
-                    sourceLink: "https://github.com/arejasverduras/portfolio"
+                    sourceLink: "https://github.com/arejasverduras/portfolio",
+                    readMe: "https://raw.githubusercontent.com/arejasverduras/portfolio/main/README.md"
                 },
                 {
                     id: 4,
@@ -54,7 +57,8 @@ const projectsSlice = createSlice({
                     cat: 'Front-End',
                     type: 'Personal',
                     demoLink: "https://arejas_jammming.surge.sh/",
-                    sourceLink: "https://github.com/arejasverduras/jammming"
+                    sourceLink: "https://github.com/arejasverduras/jammming",
+                    readMe: ""
                 },
                 {
                     id: 5,
@@ -67,7 +71,8 @@ const projectsSlice = createSlice({
                     cat: 'Front-End',
                     type: 'Personal',
                     demoLink: "https://arejasverduras.github.io/koekboek/",
-                    sourceLink: "https://github.com/arejasverduras/koekboek"
+                    sourceLink: "https://github.com/arejasverduras/koekboek",
+                    readMe: ""
                 },                
             ],
             placeHolderImage: '/images/projectImages/NoImage.png'

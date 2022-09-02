@@ -490,6 +490,14 @@ text-align: left;
   padding-left: 0;
 }
 
+.ReadMe {
+  line-height: 1.7em;
+}
+
+.ReadMe img {
+  max-width: 100%;
+}
+
 .projectLinks {
   list-style-type: none;
   padding-inline-start: 0;

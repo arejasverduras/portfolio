@@ -24,7 +24,7 @@ export const Project = () =>{
 
 
 
-    const {name, client, description, images, tech, cat, type, demoLink, sourceLink } = project;
+    const {name, client, description, images, tech, cat, type, demoLink, sourceLink, readMe } = project;
         
     useEffect(()=>{
         setCurrentProject(id);
@@ -47,9 +47,10 @@ export const Project = () =>{
                             <li key={index} className={techLabels(tech)}>{tech}</li>
                         ))}
                     </ul>
-                    <h2 className="readmeHeader">{name} Read me</h2>
+                    <h2 className="readmeHeader">Read Me</h2>
+                    <p><i>README.md loaded from project's github repository</i></p>
                     <hr></hr>
-                    <ProjectReadMe />
+                    <ProjectReadMe readMe={readMe} />
             </div>
 
         </article>
