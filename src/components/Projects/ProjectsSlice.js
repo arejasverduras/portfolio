@@ -16,7 +16,7 @@ const projectsSlice = createSlice({
                     type: 'Personal',
                     demoLink: "https://arejasresume.surge.sh",
                     sourceLink: "https://github.com/arejasverduras/resume",
-                    readMe: ""
+                    readMe: "https://raw.githubusercontent.com/arejasverduras/resume/master/README.md"
                 },
                 {
                     id: 2,
@@ -30,7 +30,7 @@ const projectsSlice = createSlice({
                     type: 'Personal',
                     demoLink: "https://shredfish.surge.sh",
                     sourceLink: "https://github.com/arejasverduras/shredfish",
-                    readMe: ""
+                    readMe: "https://raw.githubusercontent.com/arejasverduras/shredfish/master/README.md"
                 },
                 {
                     id: 3,
@@ -58,7 +58,7 @@ const projectsSlice = createSlice({
                     type: 'Personal',
                     demoLink: "https://arejas_jammming.surge.sh/",
                     sourceLink: "https://github.com/arejasverduras/jammming",
-                    readMe: ""
+                    readMe: "https://raw.githubusercontent.com/arejasverduras/jammming/master/README.md"
                 },
                 {
                     id: 5,
@@ -72,7 +72,7 @@ const projectsSlice = createSlice({
                     type: 'Personal',
                     demoLink: "https://arejasverduras.github.io/koekboek/",
                     sourceLink: "https://github.com/arejasverduras/koekboek",
-                    readMe: ""
+                    readMe: "https://raw.githubusercontent.com/arejasverduras/koekboek/main/README.md"
                 },                
             ],
             placeHolderImage: '/images/projectImages/NoImage.png'
