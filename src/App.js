@@ -2,7 +2,8 @@ import React from 'react';
 import {
   Routes,
   Route,
-  NavLink
+  NavLink,
+  useParams
 } from "react-router-dom";
 import './App.css';
 import { Home} from './components/Home/Home';
@@ -36,6 +37,11 @@ function App() {
 
   let activeClassName = "NavLinkActive";
   
+  // const ProjectPageWrapper = () => {
+  //   const {projectId} = useParams();
+  // }
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -89,12 +95,12 @@ function App() {
     <main>
       <Routes>
         <Route exact path="/" element={<Home/>}/>
-        <Route exact path="/projects" element={<Projects/>}/>
+        <Route exact path="/projects/" element={<Projects/>}/>
               {/* <Route path=":projectId" element={<Project/>}/> */}     
         <Route path="/projects/:projectId" element={<Project/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path="/play" element={<Play/>}/>
+        <Route path="about" element={<About/>}/>
+        <Route path="contact" element={<Contact/>}/>
+        <Route path="play" element={<Play/>}/>
         <Route 
           path="*"
           element={
