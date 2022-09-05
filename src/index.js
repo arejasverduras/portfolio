@@ -8,6 +8,7 @@ import './index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './components/Home/Home';
 import { Projects } from './components/Projects/Projects';
+import { ProjectView } from './components/Projects/ProjectView/ProjectView';
 import { Project } from './components/Project/Project';
 import { About } from './components/About/About';
 import { Contact } from './components/Contact/Contact';
@@ -22,9 +23,12 @@ root.render(
       <Router>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route path="home" element={<Home/>}/>
-          <Route exact path="projects" element={<Projects/>}/>     
-            <Route path="projects/:projectId" element={<Project/>}/>
+
+          <Route index element={<Home/>}/>
+          <Route path="projects" element={<ProjectView/>}>
+            <Route index element={<Projects />}/>
+            <Route path=":projectId" element={<Project/>}/>
+          </Route>
           <Route path="about" element={<About/>}/>
           <Route path="contact" element={<Contact/>}/>
           <Route path="play" element={<Play/>}/>
@@ -44,7 +48,7 @@ root.render(
             </main>
         }/>
       </Routes>
-        <App />
+        {/* <App /> */}
       </Router>
     </Provider>
   </React.StrictMode>

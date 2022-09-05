@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import { ProjectsSlider } from './ProjectSlider/ProjectSlider';
 import { ProjectList } from './ProjectList/ProjectList';
 import {useSelector} from 'react-redux';
