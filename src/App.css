@@ -62,22 +62,12 @@ nav ul {
   padding-inline-start: 0;
   padding: 0 8px;
   list-style-type: none;
-}
-
-
-.NavLink {
-  background-color: black;
-  color: white;
-  padding: 8px;
-  margin: 0px 4px;
-  border: none;
-  color: #ec506575;
+  max-width: 100%;
 }
 
 .NavLink {
   background-color: rgba(255, 255, 255, 0.847);
   color: black;
-  /* box-shadow: #F9A834 8px 10px; */
   border-right: 2px solid #bceaf6;
   border-bottom: 2px solid #03919B;
   border-left: 2px solid #ffd083;
@@ -97,8 +87,22 @@ nav ul {
 }
 
 @media only screen and (max-width : 768px) {
+  nav ul {
+    padding: 0 4px;
+    font-size: 1em;
+  }
+  .NavLink {
+    margin: 2px;
+  }
+  
   .NavLinkPlay {
     display: none;
+  }
+}
+
+@media only screen and (max-width : 375px) {
+  nav ul {
+    font-size: 0.6em;
   }
 }
 
