@@ -57,6 +57,7 @@ nav {
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   justify-items: center;
   padding-inline-start: 0;
   padding: 0 8px;
@@ -93,6 +94,12 @@ nav ul {
 .NavLinkPlay {
   border: none;
   border-radius: 25px;
+}
+
+@media only screen and (max-width : 768px) {
+  .NavLinkPlay {
+    display: none;
+  }
 }
 
 .NavLink:hover {
@@ -146,14 +153,14 @@ nav a {
   background: radial-gradient(circle at 50vw 40vh, #00000000 145px, #ffd083 150px);
   z-index: 9;
   transition: all 1s;
-  animation: spotLightSideSlide 2s linear forwards, spotLightShrink 1s linear 2s forwards;
+  animation: spotLightShrink 1s linear forwards;
 }
 
-@media screen and (max-width = 500px) {
+@media only screen and (min-width : 768px) {
   #SpotLight {
-    animation: spotLightShrink 1s linear forwards;
-  }
-};
+    animation: spotLightSideSlide 2s, spotLightShrink 0.4s linear 2s forwards;
+    }
+}
   
 
 @keyframes spotLightSideSlide {
@@ -193,44 +200,13 @@ nav a {
   }
 }
 
-/* @keyframes SpotLightIntro {
-  0% {
-    transform: translateX(50vw);
-  }
-
-  20%{
-    transform: translateX(20vw);
-  }
-
-  40% {
-    transform: translateX(60vw);
-    transform: translateY(30vh);
-  }
-
-  60%{
-    transform: translateX(40vw);
-    transform: translateY(50vh);
-  }
-
-  80%{
-    transform: translateX(20px);
-    transform: translateY(80px);
-  }
-
-  100%{
-    transform: translateX(60px);
-    transform: translateY(10px);
-  }
-  
-} */
-
 .heroSection {
   opacity: 1;
 }
 
 .heroTitleSection {
   background-color: rgba(255, 255, 255, 0.847);
-  padding: 40px;
+  padding: 30px;
   border-right: 8px solid #bceaf6;
   border-bottom: 8px solid #03919B;
   border-left: 8px solid #ffd083;
@@ -238,7 +214,7 @@ nav a {
   margin-bottom: 30px;
   /* z-index: 1; */
   border-radius: 25px;
-  max-width: 400px;
+  max-width: 350px;
   margin: 0 auto;
   box-shadow: #ec5064 8px 8px;
 }
