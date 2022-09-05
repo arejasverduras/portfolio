@@ -20,19 +20,21 @@ This app is an up to date Portfolio of my coding experience so far. It displays 
 
 ## Technologies Used
 - Redux 
+- React Router V6
 - React
+
 - Javascript
 
 ## Features
 - All content loaded dynamically from a database. Currently a JS object in the redux store.
-- Project overview page with project slider and project Tile
-- Tech labels per project, dynamically styled
-- Front- end / back-end /  full stack category labels, dynamically styled
-- Project Type labels (personal, employed)
+- Project overview page with project slider and project Tile.
+- Tech labels per project, dynamically styled.
+- Front- end / back-end /  full stack category labels, dynamically styled.
+- Project Type labels (personal, employed).
 - Project page with image slider. 
-- Project page hosts links to demo page & github source
-- Renders project's Readme MarkDown file directly from github as a project description
-- Home, About and Contact page
+- Project page hosts links to demo page & github source.
+- Renders project's Readme MarkDown file directly from github as a project description.
+- Home, About and Contact page.
 - "Play" page with experiments in css animations.
 
 
@@ -43,7 +45,7 @@ This app is an up to date Portfolio of my coding experience so far. It displays 
 ![portfolio4](https://user-images.githubusercontent.com/62893479/187303687-27a95653-aacf-4bbb-b622-21e2ff6d817e.png)
 
 ## Usage
-Navigate to the Projects page and select a Project for more information
+Navigate to the Projects page and select a Project for more information.
 
 ## Project Status
 Project is:  _in progress_ 
@@ -59,7 +61,7 @@ Room for improvement:
 To-Do: 
 
 - Add Search functionality
-- Filter by category / tech / type 
+- Filter by category / tech / type
 - Add content to an admin section of the app
 
 ## Contact
