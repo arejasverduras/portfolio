@@ -149,6 +149,13 @@ nav a {
   animation: spotLightSideSlide 2s linear forwards, spotLightShrink 1s linear 2s forwards;
 }
 
+@media screen and (max-width = 500px) {
+  #SpotLight {
+    animation: spotLightShrink 1s linear forwards;
+  }
+};
+  
+
 @keyframes spotLightSideSlide {
   0% {
     transform: scale(4.5)
