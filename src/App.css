@@ -102,6 +102,7 @@ nav ul {
 
 @media only screen and (max-width : 375px) {
   nav ul {
+    /* margin: 5px 0px; */
     font-size: 0.6em;
   }
 }
@@ -228,6 +229,19 @@ nav a {
   border-radius: 50%;
   border: 3px solid white;
 }
+
+@media only screen and (max-width: 375px){
+  .heroTitleSection {
+    font-size: 1em;
+    padding: 10px;
+    max-width: 95%;
+  }
+
+  .heroImage {
+    max-width: 90%;
+  }
+}
+
 
 .optionalTextSection {
   display: none;
