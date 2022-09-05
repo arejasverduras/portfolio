@@ -14,16 +14,12 @@ export const Project = () =>{
 
     const [currentProject, setCurrentProject] = useState(id);
 
-
     const allProjects = useSelector(selectProjects);
     const filteredProject = allProjects.filter(pr => 
         pr.id === currentProject
     );
     // console.log(filteredProject);
     const project = filteredProject[0];
-
-
-
     const {name, client, description, images, tech, cat, type, demoLink, sourceLink, readMe } = project;
         
     useEffect(()=>{
