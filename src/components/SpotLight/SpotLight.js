@@ -10,9 +10,9 @@ export const SpotLight = () => {
     }
 
     const handleClick = (event) => {
-
         const spotLightEl = document.querySelector("#SpotLight");
         spotLightEl.style.animation = 'spotLightGrow 1s forwards';
+        document.removeEventListener('click', handleClick)
         document.addEventListener('click', handleClick2);
      
         // document.removeEventListener("mousemove", handleMouseMove);
