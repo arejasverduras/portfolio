@@ -10,9 +10,19 @@ export const SpotLight = () => {
     }
 
     const handleClick = (event) => {
+
         const spotLightEl = document.querySelector("#SpotLight");
-        spotLightEl.style.opacity = '0';
-        document.removeEventListener("mousemove", handleMouseMove);
+        spotLightEl.style.animation = 'spotLightGrow 1s forwards';
+        document.addEventListener('click', handleClick2);
+     
+        // document.removeEventListener("mousemove", handleMouseMove);
+    }
+
+    const handleClick2 = (event) => {
+        const spotLightEl = document.querySelector("#SpotLight");
+        spotLightEl.style.animation = 'spotLightShrink 0.4s forwards';
+        document.removeEventListener('click', handleClick2)
+        document.addEventListener('click', handleClick);
     }
 
     useEffect(()=>{
