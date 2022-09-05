@@ -16,26 +16,26 @@
 
 
 ## General Information
-This app is an up to date Portfolio of my coding experience so far. It displays project that stood out in terms of technology and learning  curve. It also serves as another practice project working with Redux & React.
+This app is an up-to-date Portfolio of my coding experience so far. It displays projects that stood out in terms of technology and learning curve. It also serves as another practice project working with Redux & React.
 
 ## Technologies Used
 - Redux 
 - React Router V6
 - React
-
 - Javascript
 
 ## Features
 - All content loaded dynamically from a database. Currently a JS object in the redux store.
-- Project overview page with project slider and project Tile.
+- Project overview page with project slider and project tiles.
 - Tech labels per project, dynamically styled.
-- Front- end / back-end /  full stack category labels, dynamically styled.
-- Project Type labels (personal, employed).
+- Front- end / back-end /  full-stack category labels, dynamically styled.
+- Project type labels (personal, employed).
 - Project page with image slider. 
 - Project page hosts links to demo page & github source.
-- Renders project's Readme MarkDown file directly from github as a project description.
+- Renders project's Readme MarkDown file directly from github into each project's description.
 - Home, About and Contact page.
-- "Play" page with experiments in css animations.
+- SpotLight effect on homepage using CSS and JavaScript
+- "Play" page with experiments in CSS animations.
 
 
 ## Screenshots
@@ -53,16 +53,15 @@ Project is:  _in progress_
 ## Room for Improvement
 
 Room for improvement:
-- smaller images for responsive states
+- Smaller images for responsive states
 - Personal pictures
 - General styling: buttons, links
-- load more interesting project from Codecademy courses
+- Add more interesting projects from Codecademy courses
 
 To-Do: 
-
 - Add Search functionality
 - Filter by category / tech / type
-- Add content to an admin section of the app
+- Add content using an admin section of the app
 
 ## Contact
 Created by [@arejasverduras](https://arejasportfolio.surge.sh/) - feel free to contact me!
