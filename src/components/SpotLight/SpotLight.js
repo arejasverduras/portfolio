@@ -1,5 +1,4 @@
 import {React, useEffect} from 'react';
-import { notInitialized } from 'react-redux/es/utils/useSyncExternalStore';
 
 export const SpotLight = () => {
 
@@ -14,8 +13,7 @@ export const SpotLight = () => {
         spotLightEl.style.animation = 'spotLightGrow 1s forwards';
         document.removeEventListener('click', handleClick)
         document.addEventListener('click', handleClick2);
-     
-        // document.removeEventListener("mousemove", handleMouseMove);
+        document.removeEventListener("mousemove", handleMouseMove);
     }
 
     const handleClick2 = (event) => {
@@ -23,6 +21,7 @@ export const SpotLight = () => {
         spotLightEl.style.animation = 'spotLightShrink 0.4s forwards';
         document.removeEventListener('click', handleClick2)
         document.addEventListener('click', handleClick);
+        document.addEventListener("mousemove", handleMouseMove);
     }
 
     useEffect(()=>{
@@ -33,6 +32,7 @@ export const SpotLight = () => {
     },)
 
     useEffect(()=>{
+        // document.removeEventListener('click', handleClick2)
         document.addEventListener("click", handleClick);
         
         return ()=>{
