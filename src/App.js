@@ -94,12 +94,12 @@ function App() {
       </header>
     <main>
       <Routes>
-        <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/" element={<Home />}/>
         <Route exact path="projects" element={<Projects/>}/>     
           <Route path="/projects/:projectId" element={<Project/>}/>
-        <Route path="about" element={<About/>}/>
-        <Route path="contact" element={<Contact/>}/>
-        <Route path="play" element={<Play/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/play" element={<Play/>}/>
         <Route 
           path="*"
           element={
