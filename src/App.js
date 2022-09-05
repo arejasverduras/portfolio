@@ -2,6 +2,8 @@ import React from 'react';
 import {
   Routes,
   Route,
+  Outlet,
+  Link,
   NavLink,
   useParams
 } from "react-router-dom";
@@ -93,7 +95,8 @@ function App() {
       </nav>
       </header>
     <main>
-      <Routes>
+      <Outlet />
+      {/* <Routes>
         <Route exact path="/" element={<Home />}/>
         <Route exact path="projects" element={<Projects/>}/>     
           <Route path="/projects/:projectId" element={<Project/>}/>
@@ -107,7 +110,7 @@ function App() {
             <p>There's nothing here!</p>
             </main>
         }/>
-      </Routes>
+      </Routes> */}
       
     </main>
 
